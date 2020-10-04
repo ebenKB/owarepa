@@ -1,65 +1,64 @@
+import {useState, useEffect} from 'react';
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Main.module.css'
+import Footer from '../components/Footer';
+import Navigation from '../components/Navigation';
+import { Controller, Scene } from 'react-scrollmagic';
+import { appContext } from '../context/app.context';
+import Features from '../components/Features';
+import DownloadSection from '../components/DownloadSection';
+import BenefitsSection from '../components/BenefitsSection';
+import ScrollOut  from "scroll-out";
+import AppHeadMeta from '../components/AppHeadMeta';
 
 export default function Home() {
+  const [bodyPosistion, setBodyPosition] = useState('default')
+  useEffect(() => {
+    ScrollOut({
+      threshold: 0.5,
+      onShown: function(el) {
+        // remove the class
+        el.classList.remove("animate__animated");
+        el.classList.remove("animate__slideInDown");
+  
+        // force reflow
+        void el.offsetWidth;
+  
+        // re-add the animated cl
+        el.classList.add("animate__animated");
+        el.classList.add("animate__slideInDown");
+      },
+    });
+    return () => null;
+  }, [])
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+    <appContext.Provider value={{position : bodyPosistion}}>
+      <div className={styles.container}>
+        <AppHeadMeta />
+        <Navigation setBodyPosition={(val) => setBodyPosition(val)}/>
+        <main>
+          <section className={styles.hero}>
+            <div className={styles.hero_overlay} />
+          </section>
+          <section className={`${styles.main} ${styles.main} ${bodyPosistion === 'fixed' ? styles.main_fixed : styles.main_default}`}>
+            <div className={styles.hero_content}>
+              <div className={styles.hero_text}>
+                <h1>OWAREPA</h1>
+                <p className={`${styles.hero_content_caption} animate__animated animate__bounceIn`}>
+                  the most popular of the strategy games belonging to the Mancala family of board games.
+                </p>
+              </div>
+            </div>
+            <div className={styles.main__content}>
+              <Features />
+              <BenefitsSection />
+              <DownloadSection />
+            </div>
+            <Footer />
+          </section>
+        </main>
+      </div>
+    </appContext.Provider>
   )
 }

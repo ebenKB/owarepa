@@ -1,0 +1,33 @@
+.app_header {
+  background: transparent;
+  width: 100%;
+  padding: 25px;
+  position: fixed;
+  z-index: 3;
+  color:white;
+}
+
+.app_header__opaque {
+  background-color: rgb(32, 32, 32);
+  transition: all .5s ease-in-out;
+}
+
+.app_header__transparent {
+  background-color: transparent;
+  /* background: var(--black); */
+  transition: all .5s ease-in-out;
+}
+
+/* .app_logo {
+ animation: spin 10s linear normal infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+} */

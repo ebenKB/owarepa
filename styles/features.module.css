@@ -1,0 +1,15 @@
+.features_section {
+  background: var(--dark);
+  padding: 200px;
+  min-height: 100vh;
+}
+
+.features_section__content div {
+  /* background: rgb(46, 46, 46);
+  height: 430px; */
+  margin-right: 20px;
+}
+
+/* .features_section__content div:not(:last-child){
+  margin-right: 20px;
+} */

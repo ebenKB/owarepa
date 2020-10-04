@@ -1,0 +1,6 @@
+.headerFix {
+  height: 85px;
+  width: 100vw;
+  display: block;
+  /* background: var(--black); */
+}
