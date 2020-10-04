@@ -1,0 +1,94 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+  color: white;
+  height: 100vh;
+}
+
+.main_fixed {
+  position: fixed;
+}
+
+.main_default {
+  position: relative;
+}
+
+.main__content {
+  background: var(--off-white);
+  z-index: 2;
+  color: var(--off-white);
+}
+
+
+.content_text {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.hero {
+  background: url('/oware.jpg') no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    width: 100%;
+  }
+}
+
+
+.hero_overlay {
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(26, 25, 25, .25));
+  height: 100vh;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero_overlay {
+    width: 100%;
+  }
+}
+
+.hero_content{
+  height: 100vh;
+  padding: 150px 20px;
+  text-align: center;
+}
+
+.hero_content h1 {
+  font-size: 7rem;
+  font-weight: bold;
+}
+
+.hero_content_caption {
+  font-size: 2rem;
+  color: #3cf38f;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.hero_text {
+  margin-top: 240px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  z-index: -1;
+};
+
+@media only screen and (max-width: 600px) {
+  .hero_text {
+    margin-top: 40px;
+    display: none;
+  }
+}
+
+

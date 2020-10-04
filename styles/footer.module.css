@@ -1,0 +1,30 @@
+.app_footer {
+  position: relative;
+  padding: 50px 300px;
+  color: var(--off-white);
+  /* min-height: 30vh; */
+  width: 100%;
+  /* background: rgb(26, 25, 25); */
+  background: var(--black);
+  /* transform: translateY(90px); */
+}
+
+.footer__wrapper {
+  width: 60%;
+  margin: auto;
+}
+
+.nav__links {
+  text-transform: capitalize;
+}
+
+.footer__item {
+  padding: 4px 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .app_footer {
+    padding: 50px;
+  }
+}

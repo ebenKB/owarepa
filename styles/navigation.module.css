@@ -1,0 +1,47 @@
+.nav_wrapper {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav_wrapper  div {
+  width: 100%;
+}
+
+.nav_wrapper__content {
+  z-index: 10;
+  background: var(--off-white);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  color: var(--off-white);
+}
+
+.nav_menu {
+  background: var(--dark);
+  height: 100vh;
+}
+
+.nav_caption {
+  background: var(--wood);
+  color: var(--dark);
+}
+
+.nav_menu__heading {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  z-index: 10;
+}
+
+.nav_links__wrapper, .nav_caption {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: inherit;
+}
+
+.nav_links__wrapper *:hover {
+  /* color: var(--red); */
+  color: var(--wood);
+}

@@ -1,0 +1,31 @@
+.benefits_section {
+  position: relative;
+  padding: 200px;
+  background: var(--dark);
+  min-height: 50vh;
+}
+
+
+.benefits_section__content {
+  border-left: 4px dotted var(--red);
+  border-bottom-right-radius: 3px;
+  padding: 0 30px;
+}
+
+.benefits_section__content li{
+  position: relative;
+  /* list-style: circle; */
+}
+
+.benefits_section__content li ::before {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: var(--red);
+  z-index: 99;
+  display: block;
+  content: "";
+  bottom: 70%;
+  left: -40px;
+  border-radius: 100%;
+}
