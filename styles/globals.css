@@ -1,7 +1,7 @@
 
 :root {
   --black : #111517;
-  --off-white: #dbdbdb;
+  --off-white: #ccc8c8;
   --dark : #1b2a2f;
   --teal: #00fff6;
   --red: #ef0d33;
@@ -47,9 +47,11 @@ a.active {
 [data-scroll] {
   transition: opacity 1s;
 }
+
 [data-scroll="in"] {
   opacity: 1;
 }
+
 [data-scroll="out"] {
   opacity: 0;
 }
@@ -58,6 +60,15 @@ a.active {
   text-transform: capitalize;
 }
 
+.content_text {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.rounded-image {
+  border: 1px solid wheat;
+  padding: 5px;
+  border-radius: 5px;
+}
 
 @media only screen and (max-width: 600px) {
   body {

@@ -23,9 +23,10 @@
 }
 
 .rulesContent {
-  background: var(--dark);
+  background: var(--black);
   color: var(--off-white);
   padding: 200px;
+  height: 100vh;
 }
 
 .namnamContent {
@@ -39,4 +40,29 @@
   background: var(--dark);
   padding: 200px;
   color: var(--off-white);
+}
+
+.game_rules ul{
+  border-left: 2px dotted var(--red);
+  padding-left: 20px;
+}
+
+.game_rules ul li {
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.game_rules ul li:last-child {
+  padding-bottom: 0;
+}
+
+.game_rules ul li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: red;
+  left: -27px;
+  top: 10px;
 }

@@ -22,7 +22,10 @@ const Header = ({ handleAction, setBodyPosition }) => {
   return (
     <div className={`flex ${HeaderStyles.app_header} ${yPos > 50 ? HeaderStyles.app_header__opaque : HeaderStyles.app_header__transparent}`}>
       <div className="flex-1 text-2xl">
-        <img src="/logo.png" alt="" className={`${HeaderStyles.app_logo } w-12`} />
+        <span className="inline-flex items-center m-auto">
+          <img src="/logo.png" alt="" className={`${HeaderStyles.app_logo } w-12`} />
+          <span className="ml-2 text-3xl">owarepa</span>
+        </span>
       </div>
       <div className="flex-1 text-right">
           <button onClick={handleHamBurgerClick} className="w-8" >
