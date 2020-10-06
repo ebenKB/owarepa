@@ -1,12 +1,32 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navigation from '../components/Navigation';
 import styles from '../styles/about.module.css'
 import Footer from '../components/Footer';
 import NavLinks from '../components/NavLinks';
 import DownloadSection from '../components/DownloadSection';
 import AppHeadMeta from '../components/AppHeadMeta';
+import ScrollOut  from "scroll-out";
 
 const About = () => {
+  useEffect(() => {
+    ScrollOut({
+      threshold: 0.5,
+      onShown: function(el) {
+        // remove the class
+        el.classList.remove("animate__animated");
+        el.classList.remove("animate__slideInDown");
+  
+        // force reflow
+        void el.offsetWidth;
+  
+        // re-add the animated cl
+        el.classList.add("animate__animated");
+        el.classList.add("animate__slideInDown");
+      },
+    });
+    return () => null;
+  }, [])
+
   return (
     <div>
     <AppHeadMeta />
@@ -17,8 +37,8 @@ const About = () => {
             <h1 className="text-5xl mb-10" data-scroll>
               HISTORY OF OWARE
             </h1>
-            <p className="mb-10 text-2xl content_text">
-              Oware (also known as Wari or Awale) is the most popular of the strategy 
+            <p className="w-11/12 mb-10 text-2xl content_text">
+              Oware (<em>also known as Wari or Awale</em>) is the most popular of the strategy 
               games belonging to the Mancala family of board games.
             </p>
             <div className="flex content_text">
@@ -63,7 +83,8 @@ const About = () => {
                   <li>Players play in turns.</li>
                   <li>It is mandatory for each player to make a move.</li>
                   <li>
-                    When a move is being made, all seeds in a hole are taken and distributed one by one in anti-clockwise direction.
+                    When a move is being made, all seeds in a hole are taken and 
+                    distributed one by one in anti-clockwise direction.
                   </li>
                   <li>
                     A move that eventually leaves your opponent with no seed to play with is forbidden.

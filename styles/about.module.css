@@ -7,7 +7,7 @@
 }
 
 .aboutOverlay {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(26, 25, 25, .3));
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(26, 25, 25, .4));
   /* background: black; */
   /* opacity: 0.25; */
   color: var(--off-white);
@@ -23,21 +23,21 @@
 }
 
 .rulesContent {
-  background: var(--black);
+  background: var(--dark);
   color: var(--off-white);
   padding: 200px;
   height: 100vh;
 }
 
 .namnamContent {
-  background: var(--dark);
+  background: var(--black);
   /* color: var(--off-white); */
   padding: 200px;
   color: var(--off-white);
 }
 
 .abapaContent {
-  background: var(--dark);
+  background: var(--black);
   padding: 200px;
   color: var(--off-white);
 }
