@@ -1,21 +1,30 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-// import styles from '../styles/contact.module.css';
 import HeaderFix from '../components/HeaderFix';
 import ContactForm from '../components/ContactForm';
 import Contactstyles from "../styles/contact.module.css"
 import DownloadSection from '../components/DownloadSection';
 import AppHeadMeta from '../components/AppHeadMeta';
 import Link from 'next/link';
+import Layout from '../components/Layout';
+import { AppContext } from '../context/app.context';
 
 const Contact = () => {
+  const { data, setAppState } = useContext(AppContext)
+  useEffect(() => {
+    setAppState(({
+      ...data,
+      position: 'default'
+    }))
+  }, []);
+  
   return (
     <div>
       <AppHeadMeta />
       <Navigation />
         <div className={Contactstyles.contactWrapper}>
-          {/* <HeaderFix /> */}
+          <Layout>
           <div className={`flex flex-wrap ${Contactstyles.contactWrapper_content}`}>
             <div className={`${Contactstyles.contact_wrapper} ${Contactstyles.contact_intro_wrapper} flex-none md:flex-1 lg:flex-1 xl:flex-1 animate__animated animate__slideInDown`}>
               <div className={`${Contactstyles.contact_wrapper} ${Contactstyles.contact_intro} text-center m-auto`}>
@@ -34,6 +43,7 @@ const Contact = () => {
               <ContactForm />
             </div>
           </div>
+          </Layout>
         </div>
         <DownloadSection />
         <Footer />

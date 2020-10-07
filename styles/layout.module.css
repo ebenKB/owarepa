@@ -1,0 +1,7 @@
+.main_fixed {
+  position: fixed;
+}
+
+.main_default {
+  position: relative;
+}

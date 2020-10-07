@@ -1,20 +1,29 @@
-import {useState, useEffect} from 'react';
-import Head from 'next/head'
+import {useState, useEffect, useContext} from 'react';
 import styles from '../styles/Main.module.css'
 import Footer from '../components/Footer';
 import Navigation from '../components/Navigation';
 import { Controller, Scene } from 'react-scrollmagic';
-import { appContext } from '../context/app.context';
+import { AppContext } from '../context/app.context';
 import Features from '../components/Features';
 import DownloadSection from '../components/DownloadSection';
 import BenefitsSection from '../components/BenefitsSection';
 import ScrollOut  from "scroll-out";
 import AppHeadMeta from '../components/AppHeadMeta';
 import { useTrail, animated, useTransition } from 'react-spring';
+import Cursor from '../components/Cursor';
+import Layout from '../components/Layout';
 
 export default function Home() {
-  const [bodyPosistion, setBodyPosition] = useState('default')
-  useEffect(() => {setToggle(!toggle)}, [])
+  const { data, setAppState } = useContext(AppContext)
+  
+  useEffect(() => {
+    setToggle(!toggle);
+    setAppState(({
+      ...data,
+      position: 'default',
+      navType: 'transparent',
+    }))
+  }, []);
 
   const transitions = useTransition(['OWAREPA'], item => item, {
     from: { transform: 'translate3d(0,-40px,0)' },
@@ -52,44 +61,45 @@ export default function Home() {
   }, [])
 
   return (
-    <appContext.Provider value={{position : bodyPosistion}}>
       <div className={styles.container}>
+      <Cursor />
         <AppHeadMeta />
-        <Navigation setBodyPosition={(val) => setBodyPosition(val)}/>
+        <Navigation />
         <main>
           <section className={styles.hero}>
             <div className={styles.hero_overlay} />
           </section>
-          <section className={`${styles.main} ${styles.main} ${bodyPosistion === 'fixed' ? styles.main_fixed : styles.main_default}`}>
-            { trail.map(({ x, height, ...rest }, index) => (
-              <div className={styles.hero_content}>
-                <animated.div className={styles.hero_text}
-                  key={index}
-                  className=""
-                  style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}
-                >
-                  <animated.div style={{ height }}>
-                    <h1>{items[index]}</h1>
-                    <p className={`${styles.hero_content_caption} animate__animated animate__bounceIn`}>
-                    the most popular of the strategy games belonging to the Mancala family of board games.
-                  </p>
+          <Layout>
+            <section className={`${styles.main} ${styles.main}`}>
+              { trail.map(({ x, height, ...rest }, index) => (
+                <div className={styles.hero_content}>
+                  <animated.div className={styles.hero_text}
+                    key={index}
+                    className=""
+                    style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}
+                  >
+                    <animated.div style={{ height }}>
+                      <h1>{items[index]}</h1>
+                      <p className={`${styles.hero_content_caption} animate__animated animate__bounceIn`}>
+                      the most popular of the strategy games belonging to the Mancala family of board games.
+                    </p>
+                    </animated.div>
+                    {/* <h1>OWAREPA</h1> */}
                   </animated.div>
-                  {/* <h1>OWAREPA</h1> */}
-                </animated.div>
-                { transitions.map(({ item, props, key }) => {
-                  <animated.div key={key} style={props}> {item}</animated.div>
-                })}
+                  { transitions.map(({ item, props, key }) => {
+                    <animated.div key={key} style={props}> {item}</animated.div>
+                  })}
+                </div>
+              )) }
+              <div className={styles.main__content}>
+                <Features />
+                <BenefitsSection />
+                <DownloadSection />
               </div>
-            )) }
-            <div className={styles.main__content}>
-              <Features />
-              <BenefitsSection />
-              <DownloadSection />
-            </div>
-            <Footer />
-          </section>
+              <Footer />
+            </section>
+          </Layout>
         </main>
       </div>
-    </appContext.Provider>
   )
 }

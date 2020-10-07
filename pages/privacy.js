@@ -1,19 +1,29 @@
-import React from 'react'
+import React, { useEffect, useContext } from 'react'
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import styles from '../styles/privacy.module.css';
 import DownloadSection from '../components/DownloadSection';
 import Link from 'next/link';
 import AppHeadMeta from '../components/AppHeadMeta';
+import { AppContext } from '../context/app.context';
 
 const Privacy = () => {
+  const { data, setAppState } = useContext(AppContext)
+  useEffect(() => {
+    setAppState(({
+      ...data,
+      position: 'default',
+      navType: 'opaque'
+    }))
+  }, []);
+
   return (
     <div>
         <AppHeadMeta />
         <Navigation />
       <div className={styles.privacy_wrapper}>
 
-          <div className="pt-15">
+          <div className="pt-32">
             <div className={styles.privacy_wrapper_content}>
             <h1 className="text-5xl pb-5">Privacy Terms and Conditions</h1>
             <div className={styles.privacy_items}>

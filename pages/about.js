@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Navigation from '../components/Navigation';
 import styles from '../styles/about.module.css'
 import Footer from '../components/Footer';
@@ -6,8 +6,18 @@ import NavLinks from '../components/NavLinks';
 import DownloadSection from '../components/DownloadSection';
 import AppHeadMeta from '../components/AppHeadMeta';
 import ScrollOut  from "scroll-out";
+import Layout from '../components/Layout';
+import { AppContext } from '../context/app.context';
 
 const About = () => {
+  const { data, setAppState } = useContext(AppContext)
+  useEffect(() => {
+    setAppState(({
+      ...data,
+      position: 'default'
+    }))
+  }, []);
+
   useEffect(() => {
     ScrollOut({
       threshold: 0.5,
@@ -30,7 +40,8 @@ const About = () => {
   return (
     <div>
     <AppHeadMeta />
-      <Navigation setBodyPosition={(val) => console.log(val)}/>
+      <Navigation />
+      <Layout>
       <div className={styles.aboutWrapper}>
         <div className={styles.aboutOverlay}></div>
           <section className={styles.aboutContent}>
@@ -155,6 +166,7 @@ const About = () => {
           <DownloadSection />
         <Footer />
       </div>
+      </Layout>
     </div>
   )
 }

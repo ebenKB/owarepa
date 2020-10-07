@@ -16,12 +16,13 @@ body {
   /* font-family: Helvetica, sans-serif; */
   font-size: 100%;
   font-family: 'Oswald', sans-serif;
-  
+  cursor: none;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  cursor: none;
 }
 
 a.active {

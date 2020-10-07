@@ -11,13 +11,13 @@
   height: 100vh;
 }
 
-.main_fixed {
+/* .main_fixed {
   position: fixed;
 }
 
 .main_default {
   position: relative;
-}
+} */
 
 .main__content {
   background: var(--off-white);
