@@ -55,10 +55,14 @@
 
 @media only screen and (max-width: 600px) {
   .benefits_section {
-    padding: 50px;
+    padding: 25px;
   }
 
   .benefits_section li ::before {
     top: 15px;
+  }
+
+  .benefits_section__content {
+    padding-right: 0;
   }
 }
