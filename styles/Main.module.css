@@ -151,7 +151,6 @@
   } */
 }
 
-
 @media only screen and (max-width: 600px) {
   .hero_text {
     margin-top: 80px;
@@ -165,7 +164,7 @@
 
   .hero_content{
     height: 100vh;
-    padding: 150px 0px;
+    padding: 50px 0px;
   }
 
   .hero_content_caption {
@@ -175,7 +174,7 @@
   }
 
   .download_btn {
-    margin-top: 8vh;
+    margin-top: 5vh;
   }
 
   .hero_content h1 {
