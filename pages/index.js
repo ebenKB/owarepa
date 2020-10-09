@@ -108,7 +108,7 @@ export default function Home() {
                         </animated.div>
                       </animated.div>
                     ))}
-                    <p className={`${styles.hero_content_caption} animate__animated animate__bounceIn`}>
+                    <p className={`${styles.hero_content_caption} animate__animated animate__bounceIn content_text`}>
                       <span className={styles.hero_content_overlay}></span>
                       the most popular of the strategy games belonging to the Mancala family of board games.
                     </p>
