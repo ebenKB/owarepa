@@ -94,8 +94,6 @@ export default function Home() {
         </section>
         <Layout>
           <section className={`${styles.main}`}>
-
-            
             <div className={styles.hero_content}>
                 <div className={styles.hero_text}>
                   <div>
