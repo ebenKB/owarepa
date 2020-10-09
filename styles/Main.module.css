@@ -48,7 +48,8 @@
   background-size: cover;
   height: 100%;
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
+  position: relative;
   z-index: 0;
 }
 
@@ -96,8 +97,11 @@
 .hero_text {
   background: transparent;
   /* margin-top: 140px; */
-  top: 0;
-  position: fixed;
+  padding: 150px 0;
+  top: 12vh;
+  left: 0;
+  /* position: fixed; */
+  position: absolute;
   text-align: center;
   width: 100%;
   height: 100vh;
@@ -117,7 +121,8 @@
   }
 
   .hero_text {
-    margin-top: 18vh;
+    margin-top: 5vh;
+    padding: 50px 0;
     width: 90%;
     margin-left: 5%;
   }
