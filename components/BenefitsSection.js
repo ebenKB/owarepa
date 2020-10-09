@@ -6,7 +6,7 @@ const BenefitsSection = () => {
   return (
     <section className={styles.benefits_section}>
       <h1 className="text-5xl mb-10">
-        <span data-scroll>4 BENEFITS OF PLAYING OWARE GAME</span>
+        <div data-scroll>4 BENEFITS OF PLAYING OWARE GAME</div>
       </h1>
       <div>
         <ul className={`${styles.content_text} ${styles.benefits_section__content}`}>

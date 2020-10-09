@@ -24,8 +24,8 @@ const Features = () => {
   }, [])
   return (
     <section className={styles.features_section}>
-      <h1 className="text-5xl mb-10">
-        <span data-scroll>FEATURES OF OWAREPA GAME</span>
+      <h1 className="text-5xl mb-10" >
+        <div data-scroll>FEATURES OF OWAREPA GAME</div>
       </h1>
       <p className="text-2xl mb-10">OwarePa is an Android game with exciting features.</p>
       <div className={`flex flex-wrap features_section ${styles.features_section__content}`}>

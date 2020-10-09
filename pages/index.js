@@ -48,7 +48,7 @@ export default function Home() {
       onShown: function(el) {
         // remove the class
         el.classList.remove("animate__animated");
-        el.classList.remove("animate__slideInDown");
+        el.classList.remove("animate__slideInLeft");
   
         // force reflow
         void el.offsetWidth;

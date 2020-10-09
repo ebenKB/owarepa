@@ -45,8 +45,8 @@ const About = () => {
       <div className={styles.aboutWrapper}>
         <div className={styles.aboutOverlay}></div>
           <section className={styles.aboutContent}>
-            <h1 className="text-5xl mb-10" data-scroll>
-              HISTORY OF OWARE
+            <h1 className="text-5xl mb-10">
+              <div data-scroll>HISTORY OF OWARE</div>
             </h1>
             <p className="w-11/12 mb-10 text-2xl content_text">
               Oware (<em>also known as Wari or Awale</em>) is the most popular of the strategy 
@@ -80,8 +80,8 @@ const About = () => {
             </div>
           </section>
           <section className={styles.rulesContent}>
-            <h1 className="text-5xl mb-10" data-scroll>
-              RULES OF OWARE
+            <h1 className="text-5xl mb-10">
+              <div data-scroll>RULES OF OWARE</div>
             </h1>
             <div className="content_text text-2xl">
               <p className="text-2xl w-4/5 pb-10">
@@ -106,8 +106,8 @@ const About = () => {
             </div>
           </section>
           <section className={styles.namnamContent}>
-            <h1 className="text-5xl mb-10" data-scroll>
-              HOW TO PLAY OWARE NANAM
+            <h1 className="text-5xl mb-10">
+              <div data-scroll>HOW TO PLAY OWARE NANAM</div>
             </h1>
             <div className="flex text-justify content_text text-2xl">
               <div className="flex-1">
@@ -141,8 +141,8 @@ const About = () => {
             </div>
           </section>
           <section className={styles.abapaContent}>
-            <h1 className="text-5xl mb-10" data-scroll>
-              HOW TO PLAY OWARE ABAPA
+            <h1 className="text-5xl mb-10">
+              <div data-scroll>HOW TO PLAY OWARE ABAPA</div>
             </h1>
             <div className="flex flex-wrap-reverse text-justify content_text text-2xl">
               <div className="flex-none md:flex-1 lg:flex-1 xl:flex-1">
