@@ -20,4 +20,9 @@
   .features_section {
     padding: 25px;
   }
+
+  .features_section__content div {
+    margin-right: 0;
+    width: 100%;
+  }
 }

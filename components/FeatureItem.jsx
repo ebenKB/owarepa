@@ -5,7 +5,7 @@ const FeatureItem = ({ caption, description, imageUrl }) => {
   return (
     <Tile>
       <h1 className="text-4xl text-center">{caption}</h1>
-      <div className="text-center w-full">
+      <div className="text-center content_text w-full">
         <img src={imageUrl} alt="" className="w-20 pt-10 pb-10 m-auto"/>
         <p>{description}</p>
       </div>

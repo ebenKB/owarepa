@@ -29,42 +29,42 @@ const Features = () => {
       </h1>
       <p className="text-2xl mb-10">OwarePa is an Android game with exciting features.</p>
       <div className={`flex flex-wrap features_section ${styles.features_section__content}`}>
-        <div className="flex-1 mb-8">
+        <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 mb-8">
           <FeatureItem
             caption="Single Player"
             description="Play alone on your phone"
             imageUrl="/user.svg"
           />
         </div>
-        <div className="flex-1 mb-8">
+        <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 mb-8">
           <FeatureItem
             caption="Multiple Players"
             description="Play with your friends and loved ones"
             imageUrl="/users.svg"
           />
         </div>
-        <div className="flex-1 mb-8">
+        <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 mb-8">
           <FeatureItem
             caption="Play with AI"
             description="Play with computer"
             imageUrl="/ai.svg"
           />
         </div>
-        <div className="flex-1 mb-8">
+        <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 mb-8">
           <FeatureItem
             caption="Play online"
             description="Play with your friends and loved ones"
             imageUrl="/www.svg"
           />
         </div>
-        <div className="flex-1 mb-8">
+        <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 mb-8">
           <FeatureItem
             caption="Multiple Languages"
             description="Interact with the game using any language that you are comfortable with."
             imageUrl="/translation.svg"
           />
         </div>
-        <div className="flex-1 mb-8">
+        <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 mb-8">
           <FeatureItem
             caption="Different speeds and levels"
             description="You can vary the game at different speeds and levels based on what you are comfortable with"
