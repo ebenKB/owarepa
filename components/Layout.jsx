@@ -4,8 +4,9 @@ import styles from '../styles/layout.module.css';
 
 const Layout = ({ children }) => {
   const { data, setAppState } = useContext(AppContext)
+  
   return (
-    <div className={`${styles.main} ${styles.main} ${data.position === 'fixed' ? styles.main_fixed : styles.main_default}`}>
+    <div className={`${data.position === 'fixed' ? styles.main_fixed : styles.main_default}`}>
       {children}
     </div>
   )
