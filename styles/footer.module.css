@@ -7,6 +7,7 @@
   /* background: rgb(26, 25, 25); */
   background: var(--black);
   /* transform: translateY(90px); */
+  z-index: 1;
 }
 
 .footer__wrapper {
@@ -16,6 +17,10 @@
 
 .nav__links {
   text-transform: capitalize;
+}
+
+.nav__links a:hover {
+  color:var(--red);
 }
 
 .footer__item {

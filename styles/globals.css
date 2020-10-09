@@ -16,7 +16,6 @@ body {
   /* font-family: Helvetica, sans-serif; */
   font-size: 100%;
   font-family: 'Oswald', sans-serif;
-  cursor: none;
 }
 
 a {
@@ -73,6 +72,13 @@ a.active {
 
 @media only screen and (max-width: 600px) {
   body {
-    /* display: none; */
+    /* cursor: none; */
+  }
+}
+
+
+@media only screen and (min-width: 600px) {
+  body {
+    cursor: none;
   }
 }

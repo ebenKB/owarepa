@@ -5,6 +5,8 @@
   /* background: var(--teal); */
   padding: 200px;
   text-transform: capitalize;
+  position: relative;
+  z-index: 1;
 }
 
 

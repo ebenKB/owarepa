@@ -25,6 +25,27 @@
   color: var(--off-white);
 }
 
+.download_btn {
+  background: var(--red);
+  border-radius: 50px;
+  padding: 10px 18px;
+  transition: all .5s ease-in-out;
+  color: var(--off-white);
+}
+
+.download_btn:hover {
+  color: var(--red);
+  background: var(--off-white);
+  transition: all 0.3s ease-in-out;
+}
+
+.download_img {
+  width: 20px;
+  height: auto;
+  padding: 5px;
+  border-radius: 100%;
+  background: var(--off-white);
+}
 
 .content_text {
   font-family: 'Source Sans Pro', sans-serif;
@@ -39,11 +60,11 @@
   z-index: 0;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .hero {
     width: 100%;
   }
-}
+} */
 
 
 .hero_overlay {
@@ -52,16 +73,17 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .hero_overlay {
     width: 100%;
   }
-}
+} */
 
 .hero_content{
   height: 100vh;
   padding: 150px 20px;
   text-align: center;
+  width: 100%;
 }
 
 .hero_content h1 {
@@ -71,24 +93,92 @@
 
 .hero_content_caption {
   font-size: 2rem;
-  color: #3cf38f;
+  color: #a5a5a5;
   font-weight: 300;
   text-transform: capitalize;
+  width: 450px;
+  margin: auto;
+  text-align: right;
+}
+
+.hero_content_caption {
+  text-shadow: 5px 5px 5px #161616;
+}
+
+.hero_content_overlay {
+  /* background: linear-gradient(rgba(252, 252, 252, 0.1), rgba(255, 255, 255, 0.1)); */
+  width: 100%;
+  height: 150px;
+  z-index: -1;
+  display: block;
+  position: absolute;
 }
 
 .hero_text {
-  margin-top: 240px;
+  margin-top: 140px;
   position: fixed;
   text-align: center;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 };
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .hero_text {
     margin-top: 40px;
     display: none;
   }
+
+  .hero_content{
+    padding: 50px;
+  }
+} */
+
+@media only screen and (max-width: 600px) {
+  .hero_overlay {
+    width: 100%;
+  }
+
+  /* .hero_text {
+    margin-top: 40px;
+  } */
+
+  .hero_content{
+    padding: 50px;
+  }
+
+  /* .hero {
+    width: 100%;
+  } */
 }
 
 
+@media only screen and (max-width: 600px) {
+  .hero_text {
+    margin-top: 80px;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .hero_content{
+    height: 100vh;
+    padding: 150px 0px;
+  }
+
+  .hero_content_caption {
+    width: auto;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .download_btn {
+    margin-top: 8vh;
+  }
+
+  .hero_content h1 {
+    font-size: 4rem;
+  }
+}

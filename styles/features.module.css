@@ -2,6 +2,8 @@
   background: var(--dark);
   padding: 200px;
   min-height: 100vh;
+  z-index: 1;
+  position: relative;
 }
 
 .features_section__content div {
@@ -13,3 +15,9 @@
 /* .features_section__content div:not(:last-child){
   margin-right: 20px;
 } */
+
+@media only screen and (max-width: 600px) {
+  .features_section {
+    padding: 50px;
+  }
+}

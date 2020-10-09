@@ -12,9 +12,11 @@ import AppHeadMeta from '../components/AppHeadMeta';
 import { useTrail, animated, useTransition } from 'react-spring';
 import Cursor from '../components/Cursor';
 import Layout from '../components/Layout';
+import Link from 'next/link';
 
 export default function Home() {
   const { data, setAppState } = useContext(AppContext)
+  const [dimension, setDimension] = useState({x: 0, })
   
   useEffect(() => {
     setToggle(!toggle);
@@ -22,7 +24,7 @@ export default function Home() {
       ...data,
       position: 'default',
       navType: 'transparent',
-    }))
+    }));
   }, []);
 
   const transitions = useTransition(['OWAREPA'], item => item, {
@@ -37,8 +39,8 @@ export default function Home() {
   const trail = useTrail(items.length, {
     config,
     opacity: toggle ? 1 : 0,
-    x: toggle ? 200 : 190,
-    from: { opacity: 0, x: 180, height: 0 },
+    x: toggle ? 20 : 190,
+    from: { opacity: 0, x: 0, height: 0 },
   })
 
   useEffect(() => {
@@ -60,9 +62,31 @@ export default function Home() {
     return () => null;
   }, [])
 
+  const handleResize = () => {
+    if (window !== undefined) {
+      setDimension({
+        x: window.innerWidth,
+        y: window.innerHeight,
+    });
+  }}
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => { window.removeEventListener('resize', handleResize)}
+  }, []);
+
+  useEffect(() => {
+    if (window !== undefined) {
+      setDimension({
+        x: window.innerWidth,
+        y: window.innerHeight,
+      })
+    }
+  }, [])
+
   return (
       <div className={styles.container}>
-      <Cursor />
+        {dimension.x >= 600 && <Cursor />}
         <AppHeadMeta />
         <Navigation />
         <main>
@@ -71,26 +95,39 @@ export default function Home() {
           </section>
           <Layout>
             <section className={`${styles.main} ${styles.main}`}>
-              { trail.map(({ x, height, ...rest }, index) => (
-                <div className={styles.hero_content}>
-                  <animated.div className={styles.hero_text}
-                    key={index}
-                    className=""
-                    style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}
-                  >
-                    <animated.div style={{ height }}>
-                      <h1>{items[index]}</h1>
+
+              
+              <div className={styles.hero_content}>
+                  <div className={styles.hero_text}>
+                    <div>
+                      { trail.map(({ x, height, ...rest }, index) => (
+                        <animated.div
+                          key={index}
+                          className=""
+                          style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}
+                        >
+                          <animated.div style={height}>
+                            <h1>{items[index]}</h1>
+                          </animated.div>
+                        </animated.div>
+                      ))}
                       <p className={`${styles.hero_content_caption} animate__animated animate__bounceIn`}>
-                      the most popular of the strategy games belonging to the Mancala family of board games.
-                    </p>
-                    </animated.div>
+                        <span className={styles.hero_content_overlay}></span>
+                        the most popular of the strategy games belonging to the Mancala family of board games.
+                      </p>
+                        <div className="pt-20 content_text">
+                            <Link href="/" passRefs>
+                            <a className={`${styles.download_btn} inline-flex items-center`} target="_blank">
+                              <span><img src="./frd-arrow.svg" alt="" className={`${styles.download_img} mr-4`}/></span>
+                              <span>Download Game Now</span>
+                            </a>
+                          </Link>
+                        </div>
+                    </div>
                     {/* <h1>OWAREPA</h1> */}
-                  </animated.div>
-                  { transitions.map(({ item, props, key }) => {
-                    <animated.div key={key} style={props}> {item}</animated.div>
-                  })}
+                  </div>
                 </div>
-              )) }
+                
               <div className={styles.main__content}>
                 <Features />
                 <BenefitsSection />

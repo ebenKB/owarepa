@@ -29,7 +29,7 @@ const Footer = () => {
               </Link>
           </div>
         </div>
-        <div className="flex-none sm:flex-none md:flex-1">
+        <div className={`${FooterStyles.nav__links} flex-none sm:flex-none md:flex-1`}>
           <div className={FooterStyles.footer__item}>
             <span><img src="/location.svg" alt="" className="w-4 mr-2 inline-block"/></span>
             <span>Accra Ghana</span>
