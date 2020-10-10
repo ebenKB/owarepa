@@ -45,46 +45,56 @@ const About = () => {
       <div className={styles.aboutWrapper}>
         <div className={styles.aboutOverlay}></div>
           <section className={styles.aboutContent}>
-            <h1 className="text-5xl mb-10">
+            <h1 className="big-caption mb-10">
               <div data-scroll>HISTORY OF OWARE</div>
             </h1>
-            <p className="w-11/12 mb-10 text-2xl content_text text-justify">
+            <p className="sm:text-base md:text-2xl lg:text-2xl xl:text-2xl mb-5 sm:w-full md:w-4/5 lg:w-4/5 xl:w-11/12 content_text text-justify">
               Oware (<em>also known as Wari or Awale</em>) is the most popular of the strategy 
               games belonging to the Mancala family of board games.
             </p>
             <div className="flex flex-wrap content_text">
               <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full mr-10">
-                  <div className="w-11/12 text-2xl text-justify">
-                    Oware is one of the oldest games played today. 
-                    This game is far from a game of chance. Instead, 
-                    it is a strategic game that requires prudence and clever moves 
-                    from both players. Oware is very popular in West Africa, 
-                    the Caribbean, Middle East and Asia. Oware belongs to the mancala family of games, 
-                    but still remains the most popular variant of this family of board games. 
-                    The game is believed to have originated with the Ashantis in Ghana.
+                  <div className="sm:w-full md:w-11/12 lg:11/12 xl:11/12 text-justify">
+                    <p className="pb-5 sm:text-base md:text-2xl lg:text-2xl xl:text-2xl sm:w-full md:w-4/5 lg:w-4/5 xl:w-11/12">
+                      Oware is one of the oldest games played today. 
+                      This game is far from a game of chance. Instead, 
+                      it is a strategic game that requires prudence and clever moves 
+                      from both players.
+                    </p>
+                    <p className="mb-5 sm:text-base md:text-2xl lg:text-2xl xl:text-2xl">
+                      Oware is very popular in West Africa, 
+                      the Caribbean, Middle East and Asia. Oware belongs to the mancala family of games, 
+                      but still remains the most popular variant of this family of board games. 
+                      The game is believed to have originated with the Ashantis in Ghana.
+                    </p>
                   </div>
               </div>
               <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full mr-10">
-                <div className="w-11/12 text-2xl text-justify">
-                  Oware is a game the unifies people, 
-                  both players and spectators alike. The name “oware” is an 
-                  Akan word meaning “he marries” or “she marries.” 
-                  History has it that an Ashanti man and woman used to play this game together, 
-                  and they loved to keep playing together so much that they got married in 
-                  order to get more time to play. No wonder today when couples play this game 
-                  together their friendship improves. There is only one app on Play Store that 
-                  can let you enjoy the oware game to the fullest extent possible. 
-                  It is called OwarePa. Simply download and play.
+                <div className="sm:w-full md:w-11/12 lg:w-11/12 xl:w-11/12  text-justify">
+                  <p className="mb-5 sm:text-base md:text-2xl lg:text-2xl xl:text-2xl">
+                    Oware is a game the unifies people, 
+                    both players and spectators alike. The name “oware” is an 
+                    Akan word meaning “he marries” or “she marries.” 
+                    History has it that an Ashanti man and woman used to play this game together, 
+                    and they loved to keep playing together so much that they got married in 
+                    order to get more time to play. 
+                  </p>
+                  <p className="sm:text-base md:text-2xl lg:text-2xl xl:text-2xl md:w-4/5 lg:w-4/5 xl:w-4/5 text-justify">
+                    No wonder today when couples play this game 
+                    together their friendship improves. There is only one app on Play Store that 
+                    can let you enjoy the oware game to the fullest extent possible. 
+                    It is called OwarePa. Simply download and play.
+                  </p>
                 </div>
               </div>
             </div>
           </section>
           <section className={styles.rulesContent}>
-            <h1 className="text-5xl mb-10">
+            <h1 className="big-caption mb-10">
               <div data-scroll>RULES OF OWARE</div>
             </h1>
-            <div className="content_text text-2xl">
-              <p className="text-2xl sm:w-full md:w-4/5 lg:w-4/5 xl:w-4/5 text-justify pb-10">
+            <div className="sm:w-full md:w-11/12 lg:w-11/12 xl:w-11/12 sm:text-base md:text-2xl lg:text-2xl xl:text-2xl content_text">
+              <p className="sm:text-base md:text-2xl lg:text-2xl xl:text-2xl sm:w-full md:w-4/5 lg:w-4/5 xl:w-4/5 text-justify pb-10">
                 The objective of Oware game is to capture more seeds than your opponent. 
                 In the case of the Nam-nam, your objective is to capture all 48 seeds. 
                 But with Abapa, one wins by capturing at least 25 seeds on the board.
@@ -106,11 +116,11 @@ const About = () => {
             </div>
           </section>
           <section className={styles.namnamContent}>
-            <h1 className="text-5xl mb-10">
+            <h1 className="mb-10 big-caption">
               <div data-scroll>HOW TO PLAY OWARE NANAM</div>
             </h1>
-            <div className="flex flex-wrap-reverse text-justify content_text text-2xl w-full">
-              <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full">
+            <div className="flex flex-wrap-reverse text-justify content_text reverse-item">
+              <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full sm:text-base md:text-2xl lg:text-2xl xl:text-2xl">
                 <p className="pb-10">
                   With the Nam-nam rule, seeds in one house are picked and distributed counter-clockwise. 
                   When the distribution ends in a non-empty house, 
@@ -141,11 +151,11 @@ const About = () => {
             </div>
           </section>
           <section className={styles.abapaContent}>
-            <h1 className="text-5xl mb-10">
+            <h1 className="big-caption mb-10">
               <div data-scroll>HOW TO PLAY OWARE ABAPA</div>
             </h1>
-            <div className="flex flex-wrap flex-wrap-reverse text-justify content_text text-2xl w-full">
-              <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full">
+            <div className="flex flex-wrap flex-wrap-reverse text-justify content_text w-full reverse-item">
+              <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full sm:text-base md:text-2xl lg:text-2xl xl:text-2xl">
                 <p className="pb-10">
                   One plays by picking all seeds in any one of the houses in the player's 
                   territory and distributing them one by one in an anti-clockwise direction. 
@@ -161,7 +171,7 @@ const About = () => {
                 </p>
                 <h3 className="">A game is won when a player earns 25 or more seeds.</h3>
               </div>
-              <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 lg:ml-20 xl:ml-20 w-full">
+              <div className="sm:mb-5 flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 lg:ml-20 xl:ml-20 w-full">
                 <img src="/namnam.png" alt="" className="rounded-image"/>
               </div>
             </div>

@@ -70,9 +70,21 @@ a.active {
   border-radius: 5px;
 }
 
+.big-caption {
+  font-size: 3rem;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     /* cursor: none; */
+  }
+
+  .reverse-item div:last-child{
+    margin-bottom: 20px;
+  }
+
+  .big-caption {
+    font-size: 1.6rem;
   }
 }
 

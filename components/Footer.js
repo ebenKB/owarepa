@@ -50,6 +50,14 @@ const Footer = () => {
               </a>
             </Link>
           </div>
+          <div className={FooterStyles.footer__item}>
+            <Link href="https://chat.whatsapp.com/D5RiDmlWcd16CK4RJtt6eH" passHref>
+              <a target="_blank">
+                <span><img src="/whatsapp_2.svg" alt="" className="w-4 mr-2 inline-block"/></span>
+                <span>WhatsApp</span>
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
 
