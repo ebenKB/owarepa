@@ -28,7 +28,7 @@
   background: var(--dark);
   color: var(--off-white);
   padding: 200px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .namnamContent {
@@ -67,4 +67,17 @@
   background: red;
   left: -27px;
   top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutOverlay {
+    width: 100%;
+  }
+
+  .abapaContent,
+  .rulesContent,
+  .namnamContent,
+  .aboutContent {
+    padding: 100px 40px;
+  }
 }

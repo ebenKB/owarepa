@@ -48,12 +48,12 @@ const About = () => {
             <h1 className="text-5xl mb-10">
               <div data-scroll>HISTORY OF OWARE</div>
             </h1>
-            <p className="w-11/12 mb-10 text-2xl content_text">
+            <p className="w-11/12 mb-10 text-2xl content_text text-justify">
               Oware (<em>also known as Wari or Awale</em>) is the most popular of the strategy 
               games belonging to the Mancala family of board games.
             </p>
-            <div className="flex content_text">
-              <div className="flex-1 mr-10">
+            <div className="flex flex-wrap content_text">
+              <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full mr-10">
                   <div className="w-11/12 text-2xl text-justify">
                     Oware is one of the oldest games played today. 
                     This game is far from a game of chance. Instead, 
@@ -64,7 +64,7 @@ const About = () => {
                     The game is believed to have originated with the Ashantis in Ghana.
                   </div>
               </div>
-              <div className="flex-1 mr-10">
+              <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full mr-10">
                 <div className="w-11/12 text-2xl text-justify">
                   Oware is a game the unifies people, 
                   both players and spectators alike. The name “oware” is an 
@@ -84,13 +84,13 @@ const About = () => {
               <div data-scroll>RULES OF OWARE</div>
             </h1>
             <div className="content_text text-2xl">
-              <p className="text-2xl w-4/5 pb-10">
+              <p className="text-2xl sm:w-full md:w-4/5 lg:w-4/5 xl:w-4/5 text-justify pb-10">
                 The objective of Oware game is to capture more seeds than your opponent. 
                 In the case of the Nam-nam, your objective is to capture all 48 seeds. 
                 But with Abapa, one wins by capturing at least 25 seeds on the board.
               </p>
               <div className={styles.game_rules}>
-                <ul>
+                <ul className="sm:text-justify">
                   <li>Players play in turns.</li>
                   <li>It is mandatory for each player to make a move.</li>
                   <li>
@@ -109,8 +109,8 @@ const About = () => {
             <h1 className="text-5xl mb-10">
               <div data-scroll>HOW TO PLAY OWARE NANAM</div>
             </h1>
-            <div className="flex text-justify content_text text-2xl">
-              <div className="flex-1">
+            <div className="flex flex-wrap-reverse text-justify content_text text-2xl w-full">
+              <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full">
                 <p className="pb-10">
                   With the Nam-nam rule, seeds in one house are picked and distributed counter-clockwise. 
                   When the distribution ends in a non-empty house, 
@@ -135,7 +135,7 @@ const About = () => {
                 </p>
                 <h3>The game ends when after a round of play, one player earns all 48 seeds.</h3>
               </div>
-              <div className="flex-1 ml-20 w-full">
+              <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full md:ml-20 lg:ml-20 xl:ml-20 w-full">
                 <img src="/namnam.png" alt="" className="rounded-image"/>
               </div>
             </div>
@@ -144,21 +144,24 @@ const About = () => {
             <h1 className="text-5xl mb-10">
               <div data-scroll>HOW TO PLAY OWARE ABAPA</div>
             </h1>
-            <div className="flex flex-wrap-reverse text-justify content_text text-2xl">
-              <div className="flex-none md:flex-1 lg:flex-1 xl:flex-1">
+            <div className="flex flex-wrap flex-wrap-reverse text-justify content_text text-2xl w-full">
+              <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full">
                 <p className="pb-10">
                   One plays by picking all seeds in any one of the houses in the player's 
                   territory and distributing them one by one in an anti-clockwise direction. 
                   When the last seed being distributed ends in an opponent’s 
                   house and that house results in 2 or 3 seeds, the player earns a 
-                  score by picking those seeds. All previous consecutive house(s) of 2 or 3 
+                  score by picking those seeds. 
+                </p>
+                <p>
+                  All previous consecutive house(s) of 2 or 3 
                   seeds in the opponent’s territory are also collected up. However, 
                   a score is not allowed if collecting the seeds will leave the opponent 
                   with no single seed in his territory to play with.
                 </p>
                 <h3 className="">A game is won when a player earns 25 or more seeds.</h3>
               </div>
-              <div className="flex-none md:flex-1 lg:flex-1 xl:flex-1 ml-20 w-full">
+              <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 lg:ml-20 xl:ml-20 w-full">
                 <img src="/namnam.png" alt="" className="rounded-image"/>
               </div>
             </div>
