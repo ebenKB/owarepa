@@ -1,8 +1,9 @@
 .contactWrapper {
   background:  var(--off-white);
-  height: 100%;
-  /* padding: 200px; */
-  /* height: 100vh; */
+  min-height: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .contactWrapper_content {

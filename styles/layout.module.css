@@ -1,5 +1,6 @@
 .main_fixed {
   position: fixed;
+  width: 100%;
 }
 
 .main_default {
@@ -7,4 +8,5 @@
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
 }
