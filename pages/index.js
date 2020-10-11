@@ -12,6 +12,7 @@ import { useTrail, animated, useTransition } from 'react-spring';
 import Cursor from '../components/Cursor';
 import Layout from '../components/Layout';
 import Link from 'next/link';
+import Transition from '../components/TransitionGroup';
 
 export default function Home() {
   const { data, setAppState } = useContext(AppContext)
@@ -97,7 +98,7 @@ export default function Home() {
             <div className={styles.hero_content}>
                 <div className={styles.hero_text}>
                   <div>
-                    { trail.map(({ x, height, ...rest }, index) => (
+                    {/* { trail.map(({ x, height, ...rest }, index) => (
                       <animated.div
                         key={index}
                         className=""
@@ -107,24 +108,25 @@ export default function Home() {
                           <h1>{items[index]}</h1>
                         </animated.div>
                       </animated.div>
-                    ))}
-                    <p className={`${styles.hero_content_caption} animate__animated animate__bounceIn content_text`}>
+                    ))} */}
+                    <Transition />
+                    <p className={`${styles.hero_content_caption} animate__animated animate__fadeIn content_text`}>
                       <span className={styles.hero_content_overlay}></span>
                       the most popular of the strategy games belonging to the Mancala family of board games.
                     </p>
-                      <div className="pt-20 content_text">
-                          <Link href="/" passRefs>
-                          <a className={`${styles.download_btn} inline-flex items-center`} target="_blank">
-                            <span><img src="./frd-arrow.svg" alt="" className={`${styles.download_img} mr-4`}/></span>
-                            <span>Download Game Now</span>
-                          </a>
-                        </Link>
-                      </div>
+                    <div className="pt-20 content_text">
+                      <Link href="/" passRefs>
+                        <a className={`${styles.download_btn} inline-flex items-center`} target="_blank">
+                          <span>
+                            <img src="./frd-arrow.svg" alt="" className={`${styles.download_img} mr-4`}/>
+                          </span>
+                          <span>Download Game Now</span>
+                        </a>
+                      </Link>
+                    </div>
                   </div>
-                  {/* <h1>OWAREPA</h1> */}
                 </div>
-              </div>
-              
+            </div>
             <div className={styles.main__content}>
               <Features />
               <BenefitsSection />
