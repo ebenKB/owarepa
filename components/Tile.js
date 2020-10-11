@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from '../styles/tile.module.css'
 
-const Tile = ({children}) => {
+const Tile = ({children, classes=""}) => {
   return (
-    <div className={styles.tile}>
+    <div className={`${styles.tile} ${classes}`}>
       {children}
     </div>
   )

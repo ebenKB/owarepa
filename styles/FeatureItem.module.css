@@ -1,0 +1,7 @@
+.item p {
+  color: var(--very-off-white);
+}
+
+.item:hover p {
+  color: var(--off-white);
+}

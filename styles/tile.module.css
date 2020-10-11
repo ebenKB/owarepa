@@ -19,7 +19,7 @@
   }
 }
 
-.tile:hover{
+.tile:hover {
   background: var(--red);
   transform: scale(1.025);
   transition: all 0.5s ease-in-out;

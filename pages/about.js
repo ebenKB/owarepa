@@ -55,15 +55,15 @@ const About = () => {
         </picture>
         <div className={styles.aboutOverlay}></div>
           <section className={styles.aboutContent}>
-            <h1 className="big-caption mb-10">
+            <h1 className="big-caption mb-10 pure-caption">
               <div data-scroll>HISTORY OF OWARE</div>
             </h1>
-            <p className="sm:text-base md:text-2xl lg:text-2xl xl:text-2xl mb-5 sm:w-full md:w-4/5 lg:w-4/5 xl:w-11/12 content_text text-justify">
+            <p className="faint-caption sm:text-base md:text-2xl lg:text-2xl xl:text-2xl mb-5 sm:w-full md:w-4/5 lg:w-4/5 xl:w-11/12 content_text text-justify">
               Oware (<em>also known as Wari or Awale</em>) is the most popular of the strategy 
               games belonging to the Mancala family of board games.
             </p>
             <div className="flex flex-wrap content_text">
-              <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full mr-10">
+              <div className="faint-caption flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full mr-10">
                   <div className="sm:w-full md:w-11/12 lg:11/12 xl:11/12 text-justify">
                     <p className="pb-5 sm:text-base md:text-2xl lg:text-2xl xl:text-2xl sm:w-full md:w-4/5 lg:w-4/5 xl:w-11/12">
                       Oware is one of the oldest games played today. 
@@ -79,7 +79,7 @@ const About = () => {
                     </p>
                   </div>
               </div>
-              <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full mr-10">
+              <div className="faint-caption flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full mr-10">
                 <div className="sm:w-full md:w-11/12 lg:w-11/12 xl:w-11/12  text-justify">
                   <p className="mb-5 sm:text-base md:text-2xl lg:text-2xl xl:text-2xl">
                     Oware is a game the unifies people, 
@@ -100,10 +100,10 @@ const About = () => {
             </div>
           </section>
           <section className={styles.rulesContent}>
-            <h1 className="big-caption mb-10">
+            <h1 className="big-caption mb-10 pure-caption">
               <div data-scroll>RULES OF OWARE</div>
             </h1>
-            <div className="sm:w-full md:w-11/12 lg:w-11/12 xl:w-11/12 sm:text-base md:text-2xl lg:text-2xl xl:text-2xl content_text">
+            <div className="faint-caption sm:w-full md:w-11/12 lg:w-11/12 xl:w-11/12 sm:text-base md:text-2xl lg:text-2xl xl:text-2xl content_text">
               <p className="sm:text-base md:text-2xl lg:text-2xl xl:text-2xl sm:w-full md:w-4/5 lg:w-4/5 xl:w-4/5 text-justify pb-10">
                 The objective of Oware game is to capture more seeds than your opponent. 
                 In the case of the Nam-nam, your objective is to capture all 48 seeds. 
@@ -126,11 +126,11 @@ const About = () => {
             </div>
           </section>
           <section className={styles.namnamContent}>
-            <h1 className="mb-10 big-caption">
+            <h1 className="mb-10 big-caption pure-caption">
               <div data-scroll>HOW TO PLAY OWARE NANAM</div>
             </h1>
             <div className="flex flex-wrap-reverse text-justify content_text reverse-item">
-              <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full sm:text-base md:text-2xl lg:text-2xl xl:text-2xl">
+              <div className="faint-caption flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full sm:text-base md:text-2xl lg:text-2xl xl:text-2xl">
                 <p className="pb-10">
                   With the Nam-nam rule, seeds in one house are picked and distributed counter-clockwise. 
                   When the distribution ends in a non-empty house, 
@@ -161,11 +161,11 @@ const About = () => {
             </div>
           </section>
           <section className={styles.abapaContent}>
-            <h1 className="big-caption mb-10">
+            <h1 className="big-caption mb-10 pure-caption">
               <div data-scroll>HOW TO PLAY OWARE ABAPA</div>
             </h1>
             <div className="flex flex-wrap flex-wrap-reverse text-justify content_text w-full reverse-item">
-              <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full sm:text-base md:text-2xl lg:text-2xl xl:text-2xl">
+              <div className="faint-caption flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full sm:text-base md:text-2xl lg:text-2xl xl:text-2xl">
                 <p className="pb-10">
                   One plays by picking all seeds in any one of the houses in the player's 
                   territory and distributing them one by one in an anti-clockwise direction. 
