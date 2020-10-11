@@ -13,10 +13,11 @@ import Cursor from '../components/Cursor';
 import Layout from '../components/Layout';
 import Link from 'next/link';
 import Transition from '../components/TransitionGroup';
+import useMedia from '../components/UseMedia';
 
 export default function Home() {
   const { data, setAppState } = useContext(AppContext)
-  const [dimension, setDimension] = useState({x: 0, })
+  const media = useMedia();
   
   useEffect(() => {
     setToggle(!toggle);
@@ -25,7 +26,7 @@ export default function Home() {
       position: 'default',
       navType: 'transparent',
     }));
-  }, []);
+  }, [media]);
 
   const transitions = useTransition(['OWAREPA'], item => item, {
     from: { transform: 'translate3d(0,-40px,0)' },
@@ -62,31 +63,9 @@ export default function Home() {
     return () => null;
   }, [])
 
-  const handleResize = () => {
-    if (window !== undefined) {
-      setDimension({
-        x: window.innerWidth,
-        y: window.innerHeight,
-    });
-  }}
-
-  useEffect(() => {
-    window.addEventListener('resize', handleResize);
-    return () => { window.removeEventListener('resize', handleResize)}
-  }, []);
-
-  useEffect(() => {
-    if (window !== undefined) {
-      setDimension({
-        x: window.innerWidth,
-        y: window.innerHeight,
-      })
-    }
-  }, [])
-
   return (
     <div className={styles.container}>
-      {dimension.x >= 600 && <Cursor />}
+      {media.x >= 600 && <Cursor />}
       <AppHeadMeta />
       <Navigation />
       <main>

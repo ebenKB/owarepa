@@ -8,15 +8,19 @@ import AppHeadMeta from '../components/AppHeadMeta';
 import ScrollOut  from "scroll-out";
 import Layout from '../components/Layout';
 import { AppContext } from '../context/app.context';
+import useMedia from '../components/UseMedia';
 
 const About = () => {
   const { data, setAppState } = useContext(AppContext)
+  const media = useMedia();
+
   useEffect(() => {
     setAppState(({
       ...data,
-      position: 'default'
+      position: 'default',
+      navType: (media && media.x >= 600 ? 'transparent' : 'opaque'),
     }))
-  }, []);
+  }, [media]);
 
   useEffect(() => {
     ScrollOut({
@@ -43,6 +47,11 @@ const About = () => {
       <Navigation />
       <Layout>
       <div className={styles.aboutWrapper}>
+        <picture className={styles.aboutWrapper}>
+          <source srcSet="/oware-small.jpg" media="(max-width: 600px)"/>
+          <img src="/board2.png" alt="" className={styles.aboutWrapper}/>
+          <div className={styles.aboutOverlay}></div>
+        </picture>
         <div className={styles.aboutOverlay}></div>
           <section className={styles.aboutContent}>
             <h1 className="big-caption mb-10">

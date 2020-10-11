@@ -1,5 +1,5 @@
 .aboutWrapper {
-  background: url('/board2.png') no-repeat;
+  /* background: url('/board2.png') no-repeat; */
   background-color: var(--wood);
   background-size: cover;
   width: 100%;
@@ -16,6 +16,10 @@
   height: 50vh;
   width: 100vw;
   display: block;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  opacity: 0.5;
 }
 
 .aboutContent {
