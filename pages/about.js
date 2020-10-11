@@ -9,6 +9,7 @@ import ScrollOut  from "scroll-out";
 import Layout from '../components/Layout';
 import { AppContext } from '../context/app.context';
 import useMedia from '../components/UseMedia';
+import ItemListWrapper from '../components/ItemListWrapper';
 
 const About = () => {
   const { data, setAppState } = useContext(AppContext)
@@ -108,8 +109,8 @@ const About = () => {
                 In the case of the Nam-nam, your objective is to capture all 48 seeds. 
                 But with Abapa, one wins by capturing at least 25 seeds on the board.
               </p>
-              <div className={styles.game_rules}>
-                <ul className="sm:text-justify">
+              <div className={`sm:text-justify ${styles.game_rules}`}>
+                <ItemListWrapper>
                   <li>Players play in turns.</li>
                   <li>It is mandatory for each player to make a move.</li>
                   <li>
@@ -120,7 +121,7 @@ const About = () => {
                     A move that eventually leaves your opponent with no seed to play with is forbidden.
                     <p>For Abapa, there exist the potential for the game to end in stalemate.</p>
                   </li>
-                </ul>
+                </ItemListWrapper>
               </div>
             </div>
           </section>

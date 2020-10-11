@@ -1,0 +1,30 @@
+.itemListWrapper {
+  border-left: 4px dotted var(--red);
+  border-bottom-right-radius: 3px;
+  padding: 0 30px;
+}
+
+.itemListWrapper li {
+  position: relative;
+}
+
+.itemListWrapper li:before {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: var(--red);
+  z-index: 99;
+  display: block;
+  content: "";
+  top: 12px;
+  left: -40px;
+  border-radius: 100%;
+  transition: 0.3s linear;
+}
+
+.itemListWrapper li:hover:before {
+  background: var(--off-white);
+  transition: .3s linear;
+  transform: scale(1.3);
+  animation: pump 3s ease-in-out normal infinite;
+}

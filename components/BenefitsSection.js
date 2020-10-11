@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/benefits.module.css'
 import Link from 'next/link'
+import ItemListWrapper from './ItemListWrapper';
 
 const BenefitsSection = () => {
   return (
@@ -8,8 +9,8 @@ const BenefitsSection = () => {
       <h1 className="text-5xl mb-10">
         <div data-scroll>4 BENEFITS OF PLAYING OWARE GAME</div>
       </h1>
-      <div>
-        <ul className={`${styles.content_text} ${styles.benefits_section__content}`}>
+      <div className={styles.content_text}>
+        <ItemListWrapper>
           <li className="pb-8">
             <h3 className="text-3xl">Playing Oware brings social togetherness</h3>
             <p className="content_text">A bond of friendship is formed between players and spectators alike.</p>
@@ -40,7 +41,7 @@ const BenefitsSection = () => {
               more seeds afterward, or getting the chance to rearrange the seeds on the board to your favor.
             </p>
           </li>
-        </ul>
+        </ItemListWrapper>
         <div className={`pt-12 ${styles.content_text} text-right`}>
           <Link href="/about" className="">
             <a className="link-btn">Learn more</a>
