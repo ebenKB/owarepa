@@ -73,6 +73,15 @@
   top: 10px;
 }
 
+@media only screen and (max-width: 1280px) {
+  .aboutContent,
+  .rulesContent,
+  .abapaContent,
+  .namnamContent {
+    padding: 100px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .aboutOverlay {
     width: 100%;
