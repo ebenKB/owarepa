@@ -84,14 +84,14 @@
   text-shadow: 5px 5px 5px #161616;
 }
 
-.hero_content_overlay {
-  /* background: linear-gradient(rgba(252, 252, 252, 0.1), rgba(255, 255, 255, 0.1)); */
+/* .hero_content_overlay {
+  background: linear-gradient(rgba(252, 252, 252, 0.1), rgba(255, 255, 255, 0.1));
   width: 100%;
   height: 150px;
   z-index: -1;
   display: block;
   position: absolute;
-}
+} */
 
 .hero_text {
   margin-top: 140px;

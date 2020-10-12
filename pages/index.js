@@ -90,7 +90,6 @@ export default function Home() {
                     ))} */}
                     <Transition />
                     <p className={`${styles.hero_content_caption} animate__animated animate__fadeIn content_text`}>
-                      <span className={styles.hero_content_overlay}></span>
                       the most popular of the strategy games belonging to the Mancala family of board games.
                     </p>
                     <div className="pt-20 content_text">
