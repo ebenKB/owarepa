@@ -1,5 +1,6 @@
 .contactWrapper {
-  background:  var(--off-white);
+  /* background:  var(--off-white); */
+  background: var(--black);
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -11,7 +12,8 @@
   margin-left: auto;
   margin-right: auto;
   min-height: 100vh;
-  color: var(--faint);
+  /* color: var(--faint); */
+  color: var(--off-white);
 }
 
 .contact_wrapper {
@@ -23,15 +25,16 @@
 .contact_form {
   border: 2px solid rgb(206, 206, 206); 
   border-radius: 4px;
-  width: 60%;
+  /* width: 60%; */
+  width: 600px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   min-height: 600px;
   border-radius: 5px;
   background: white;
-  padding: 50px;
+  padding: 60px;
   font-family: 'Source Sans Pro', sans-serif;
   color: #888;
   position: relative;
@@ -73,7 +76,7 @@
 }
 
 .contact_intro_wrapper {
-  min-height: 100vh;
+  min-height: 95vh;
   display: flex;
   color: var(--off-white);
 }

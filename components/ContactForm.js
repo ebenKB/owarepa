@@ -4,7 +4,7 @@ import styles from '../styles/contact.module.css';
 const ContactForm = () => {
   return (
     <div>
-      <div className="text-center mt-20 capitalize">Send us an email instead</div>
+      <div className="text-center text-2xl mt-20 capitalize">Send us an email instead</div>
       <div className={styles.contact_form}>
         <form action="">
           <input type="text" className="text" placeholder="What name shall we call you?" />
