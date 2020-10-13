@@ -9,9 +9,13 @@ import AppHeadMeta from '../components/AppHeadMeta';
 import Link from 'next/link';
 import Layout from '../components/Layout';
 import { AppContext } from '../context/app.context';
+import Cursor from '../components/Cursor';
+import useMedia from '../components/UseMedia';
 
 const Contact = () => {
   const { data, setAppState } = useContext(AppContext)
+  const media = useMedia();
+
   useEffect(() => {
     setAppState(({
       ...data,
@@ -21,6 +25,7 @@ const Contact = () => {
   
   return (
     <section>
+    {media.x >= 600 && <Cursor />}
       <div>
         <AppHeadMeta />
         <Navigation />

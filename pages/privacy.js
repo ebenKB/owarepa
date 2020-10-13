@@ -6,9 +6,13 @@ import DownloadSection from '../components/DownloadSection';
 import Link from 'next/link';
 import AppHeadMeta from '../components/AppHeadMeta';
 import { AppContext } from '../context/app.context';
+import useMedia from '../components/UseMedia';
+import Cursor from '../components/Cursor';
 
 const Privacy = () => {
   const { data, setAppState } = useContext(AppContext)
+  const media = useMedia();
+
   useEffect(() => {
     setAppState(({
       ...data,
@@ -19,10 +23,10 @@ const Privacy = () => {
 
   return (
     <div>
+        {media.x >= 600 && <Cursor />}
         <AppHeadMeta />
         <Navigation />
       <div className={styles.privacy_wrapper}>
-
           <div className="pt-32">
             <div className={styles.privacy_wrapper_content}>
             <h1 className="big-caption pb-5">Privacy Terms and Conditions</h1>

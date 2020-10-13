@@ -10,6 +10,7 @@ import Layout from '../components/Layout';
 import { AppContext } from '../context/app.context';
 import useMedia from '../components/UseMedia';
 import ItemListWrapper from '../components/ItemListWrapper';
+import Cursor from '../components/Cursor';
 
 const About = () => {
   const { data, setAppState } = useContext(AppContext)
@@ -44,6 +45,7 @@ const About = () => {
 
   return (
     <div>
+    {media.x >= 600 && <Cursor />}
     <AppHeadMeta />
       <Navigation />
       <Layout>
