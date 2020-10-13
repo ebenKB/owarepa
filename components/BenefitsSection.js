@@ -9,7 +9,7 @@ const BenefitsSection = () => {
       <h1 className="text-5xl mb-10">
         <div data-scroll>4 BENEFITS OF PLAYING OWARE GAME</div>
       </h1>
-      <div className={`${styles.content_text} sm:w-full md:w-4/5 xl:w-4/5`}>
+      <div className={`${styles.content_text} sm:w-full md:w-4/5 xl:w-11/12`}>
         <ItemListWrapper>
           <li className="pb-8">
             <h3 className="text-3xl">Playing Oware brings social togetherness</h3>

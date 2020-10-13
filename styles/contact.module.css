@@ -73,7 +73,7 @@
 }
 
 .contact_intro_wrapper {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   color: var(--off-white);
 }
