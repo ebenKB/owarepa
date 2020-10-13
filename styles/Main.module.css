@@ -76,17 +76,14 @@
 }
 
 .hero_content_caption {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #a5a5a5;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: capitalize;
   width: 450px;
   margin: auto;
   text-align: right;
-}
-
-.hero_content_caption {
-  text-shadow: 5px 5px 5px #161616;
+  text-shadow: 2px 2px 4px #161616;
 }
 
 .hero_content_overlay {
