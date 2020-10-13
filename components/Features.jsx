@@ -28,7 +28,7 @@ const Features = () => {
         <div data-scroll>FEATURES OF OWAREPA GAME</div>
       </h1>
       <p className="text-2xl mb-10">OwarePa is an Android game with exciting features.</p>
-      <div className={`flex flex-wrap features_section ${styles.features_section__content}`}>
+      <div className={`flex flex-wrap gap-x-10 features_section ${styles.features_section__content}`}>
         <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 mb-8">
           <FeatureItem
             caption="Single Player"
