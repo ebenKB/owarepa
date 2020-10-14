@@ -38,7 +38,7 @@ const Footer = () => {
             <Link href="mailto:owarepa@gmail.com" passHref>
               <a>
                 <span><img src="/email.svg" alt="" className="w-4 mr-2 inline-block"/></span>
-                <span>owarepa@gmail.com</span>
+                <span>Email</span>
               </a>
             </Link>
           </div>
