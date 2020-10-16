@@ -1,0 +1,40 @@
+.contact_wrapper {
+  background: var(--black);
+  padding: 200px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  column-gap: 40px;
+}
+
+.contact_wrapper .item {
+  min-width: 350px;
+  margin: 20px 0;
+}
+
+.contact_wrapper form {
+  color: var(--very-off-white);
+}
+
+.contact_wrapper input,
+.contact_wrapper textarea {
+  background: inherit;
+  border: none;
+  border-bottom: 1px solid var(--very-off-white);
+  padding: 10px 0;
+  width: 100%;
+}
+
+.contact_wrapper input:focus,
+.contact_wrapper textarea:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--wood);
+}
+
+.contact_wrapper input::placeholder {
+  color: var(--very-off-white);
+}

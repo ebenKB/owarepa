@@ -35,10 +35,24 @@ a.active {
 }
 
 .link-btn {
-  padding: 10px;
   background: var(--off-white);
-  border-radius: 4px;
   color: var(--dark);
+}
+
+.active-btn,
+.link-btn {
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+
+.active-btn {
+  background: var(--off-white);
+  color: var(--dark);
+}
+
+.active-btn:hover {
+  background: var(--wood);
+  color: var(--off-white);
 }
 
 .link-btn:hover {

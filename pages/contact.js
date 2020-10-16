@@ -11,6 +11,7 @@ import Layout from '../components/Layout';
 import { AppContext } from '../context/app.context';
 import Cursor from '../components/Cursor';
 import useMedia from '../components/UseMedia';
+import DarkContactForm from '../components/DarkContactForm';
 
 const Contact = () => {
   const { data, setAppState } = useContext(AppContext)
@@ -46,7 +47,8 @@ const Contact = () => {
                 </div>
               </div>
               <div className={`${Contactstyles.contact_form_content} flex-none md:flex-1 lg:flex-1 xl:flex-1`}>
-                <ContactForm />
+                {/* <ContactForm /> */}
+                <DarkContactForm />
               </div>
             </div>
           </div>
