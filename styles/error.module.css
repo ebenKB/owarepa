@@ -1,0 +1,5 @@
+.error_wrapper {
+  color: var(--red);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
