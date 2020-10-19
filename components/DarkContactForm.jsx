@@ -6,10 +6,19 @@ import { useForm } from "react-hook-form";
 import Error from './Error';
 
 const DarkContactForm = () => {
+  const [hasSentMessage, setSentMessage] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const { register, handleSubmit, errors, reset, formState: { isSubmitSuccessful } } = useForm();
+  const [submittedData, setSubmittedData] = useState({})
+
   useEffect(() => {
     init("user_WoaQG3JrUf57KosqWwjL3");
   }, [])
 
+  useEffect(() => {
+    reset(submittedData)
+    console.log('The data changed', submittedData)
+  }, [submittedData])
   // useEffect(() => {
   //   const interval = null;
   //   if (hasSentMessage) {
@@ -17,30 +26,37 @@ const DarkContactForm = () => {
   //   }
   //   return () => {}
   // }, [hasSentMessage])
-  const [hasSentMessage, setSentMessage] = useState(false);
-  const { register, handleSubmit, errors } = useForm();
 
   const sendEmail = async (data) => {
     console.log('We want to send an email', data)
+    setLoading(true);
     const template = {
       to_email: 'eboafo.adjei@gmail.com',
-      user_email: 'eboafo.adjei@gmail.com',
-      from_email: 'unveilface@gmail.com',
-      from_name: 'Owarepa',
-      message: 'message is here',
+      user_email: data.email,
+      from_email: 'eakbo23@gmail.com',
+      from_name: data.name,
+      message: data.message,
       reply_to: 'reply here',
       to_name: 'Kojo',
-      phone: '054',
-      notes: 'hello.. testing',
+      phone: data.phone,
+      notes: '',
     }
-    const res = await emailjs.send("1", 'owarepa_contact_form', template, 'user_WoaQG3JrUf57KosqWwjL3' )
+    const res = await emailjs.send("admin", 'owarepa_contact_form', template, 'user_WoaQG3JrUf57KosqWwjL3' )
+    console.log(res);
     if (res.status == 200) {
+      setLoading(false);
       setSentMessage(true);
+      // reset({ ...data });
+      setSubmittedData(data);
       const interval =  setTimeout(() => {
         setSentMessage(false);
         clearTimeout(interval);
       }, 10000)
     }
+
+    // if (isSubmitSuccessful) {
+    //   reset({ ...data });
+    // }
   }
 
   const handleError = (errs) => {
@@ -59,17 +75,23 @@ const DarkContactForm = () => {
       <form action="" className="content_text" onSubmit={handleSubmit(sendEmail, handleError)}>
         <div className={`${styles.content} flex flex-wrap `}>
           <div className={`${styles.item} flex-none md:flex-1 lg:flex-1 xl:flex-1`}>
-            <Input placeholder="What name shall we call you?" name="name" ref={register({ required: true })} />
+            <Input placeholder="Enter your name (optional)" name="name" ref={register({ required: false })} />
           </div>
           <div className={`${styles.item} flex-none md:flex-1 lg:flex-1 xl:flex-1`}>
-            <Input placeholder="Enter your email" name="email" ref={register} />
+            <Input 
+              placeholder="Enter your email * " 
+              name="email" 
+              ref={register({ required: "Email is required",
+                pattern: {value: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/, message: 'Email is not valid' }})}
+            />
+            <Error error={errors.email?.message} /> 
           </div>
           <div className={`${styles.item} flex-none md:flex-1 lg:flex-1 xl:flex-1`}>
             <Input 
               type="phone" 
-              placeholder="Can you give us your phone number?" 
+              placeholder="Enter your phone number (optional)" 
               name="phone" 
-              ref={register({ required: true, pattern: { value: /[0-9-]+[+]{1}/g, message: 'Phone is not valid' } })}
+              ref={register({ required: false, pattern: { value: /[0-9-]+[+]{1}/g, message: 'Phone is not valid' } })}
             />
             <Error error={errors.phone?.message} /> 
           </div>
@@ -79,15 +101,15 @@ const DarkContactForm = () => {
             id=""
             cols="30"
             rows="5"
-            placeholder="Tell us what you have for us."
+            placeholder="Tell us what you have for us. *"
             wrap="soft"
             name="message"
-            ref={register({ required: 'This field is required', minLength: {value: 3, message: 'The minimum length is 3'} })}
+            ref={register({ required: 'Message is required', minLength: {value: 3, message: 'The minimum length is 3'} })}
           />
           <Error error={errors.message?.message} /> 
         </div>
         <div className="text-right mt-10">
-          <button className="active-btn">Send Message</button>
+          <button className="active-btn" disabled={loading}>Send Message</button>
         </div>
       </form>
     </div>
