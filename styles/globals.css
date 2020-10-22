@@ -1,4 +1,3 @@
-
 :root {
   --black : #111517;
   --off-white: #ccc8c8;
@@ -112,6 +111,10 @@ a.active {
 
 .faint-caption.hoverable:hover {
   color: var(--off-white);
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: inherit;
 }
 
 @media only screen and (max-width: 600px) {

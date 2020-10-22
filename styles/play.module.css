@@ -1,0 +1,31 @@
+.abapaContent {
+  background: var(--black);
+  padding: 200px;
+  color: var(--off-white);
+}
+
+.namnamContent {
+  background: var(--black);
+  /* color: var(--off-white); */
+  padding: 200px;
+  color: var(--off-white);
+}
+
+
+@media only screen and (max-width: 1440px) {
+  .abapaContent,
+  .namnamContent {
+    padding: 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutOverlay {
+    width: 100%;
+  }
+
+  .abapaContent,
+  .namnamContent{
+    padding: 80px 40px;
+  }
+}
