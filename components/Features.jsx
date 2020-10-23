@@ -59,8 +59,8 @@ const Features = () => {
         </div>
         <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 mb-8">
           <FeatureItem
-            caption="Multiple Languages"
-            description="Interact with the game using any language that you are comfortable with."
+            caption="Features Multiple Languages"
+            description="Interact with the game using English, French, Portuguese, Spanish or Twi."
             imageUrl="/translation.svg"
           />
         </div>
@@ -68,6 +68,20 @@ const Features = () => {
           <FeatureItem
             caption="Different speeds and levels"
             description="You can vary the game at different speeds and levels based on what you are comfortable with"
+            imageUrl="/speedometer.svg"
+          />
+        </div>
+        <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 mb-8">
+          <FeatureItem
+            caption="Supports Different Screen Orientation"
+            description="Play on small or large devices."
+            imageUrl="/speedometer.svg"
+          />
+        </div>
+        <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 mb-8">
+          <FeatureItem
+            caption="Interactive Tutorial"
+            description="You get helpful tips on how to play the game."
             imageUrl="/speedometer.svg"
           />
         </div>

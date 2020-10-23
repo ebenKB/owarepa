@@ -27,6 +27,7 @@ const Navigation = () => {
         <div className="flex flex-wrap">
           <div className={`flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 text-center ${NavStyles.nav_caption} animate__animated animate__slideInLeft`}>
             <h1 className="text-5xl">Owarepa</h1>
+            {/* <img src="/logo.png" alt="" className="w-24" /> */}
           </div>
           <div className={`flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 ${NavStyles.nav_menu} animate__animated animate__slideInRight `}>
             <div className={`text-right ${NavStyles.nav_menu__heading}`}>

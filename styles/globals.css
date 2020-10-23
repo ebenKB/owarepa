@@ -117,11 +117,15 @@ h1,h2,h3,h4,h5,h6 {
   color: inherit;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    /* cursor: none; */
-  }
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  transition: background-color 5000s;
+  -webkit-text-fill-color: var(--very-off-white) !important;
+} */
 
+@media only screen and (max-width: 600px) {
   .reverse-item div:last-child {
     margin-bottom: 20px;
   }

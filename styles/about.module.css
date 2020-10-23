@@ -1,0 +1,25 @@
+.about_wrapper {
+  background: var(--dark);
+  min-height: 95vh;
+  width: 100%;
+  color: var(--faint);
+  font-size: 1.2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.about_wrapper_content {
+  width: 45%;
+  min-height: 95vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px;
+  text-align: justify;
+  color: var(--off-white);
+}
+
+@media only screen and (max-width: 600px) {
+  .about_wrapper_content {
+    width: 90%;
+    padding: 20px;
+  }
+}

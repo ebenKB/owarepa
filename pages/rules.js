@@ -30,9 +30,10 @@ const rules = () => {
       <Navigation />
       <Layout>
         <section className={`capitalize text-center ${styles.rules_hero}`}>
+        <div className={styles.rules_bg} />
         <div className={styles.rules_overlay} />
           <div className="w-full">
-            <h1 className="text-5xl">The Rules of Oware are fairly simple and straight forward</h1>
+            <h1 className="text-5xl">The Rules are fairly simple and straight forward</h1>
           </div>
         </section>
           <section className={styles.rulesContent}>

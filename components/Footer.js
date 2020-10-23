@@ -31,10 +31,6 @@ const Footer = () => {
         </div>
         <div className={`${FooterStyles.nav__links} flex-none sm:flex-none md:flex-1`}>
           <div className={FooterStyles.footer__item}>
-            <span><img src="/location.svg" alt="" className="w-4 mr-2 inline-block"/></span>
-            <span>Accra Ghana</span>
-          </div>
-          <div className={FooterStyles.footer__item}>
             <Link href="mailto:owarepa@gmail.com" passHref>
               <a>
                 <span><img src="/email.svg" alt="" className="w-4 mr-2 inline-block"/></span>
@@ -43,10 +39,18 @@ const Footer = () => {
             </Link>
           </div>
           <div className={FooterStyles.footer__item}>
-            <Link href="/" passHref>
+            <Link href="https://web.facebook.com/owarepa" passHref>
               <a target="_blank">
                 <span><img src="/facebook.svg" alt="" className="w-4 mr-2 inline-block"/></span>
                 <span>Facebook</span>
+              </a>
+            </Link>
+          </div>
+          <div className={FooterStyles.footer__item}>
+            <Link href="https://www.instagram.com/owarepa_/" passHref>
+              <a target="_blank">
+                <span><img src="/instagram.svg" alt="" className="w-4 mr-2 inline-block"/></span>
+                <span>Instagram</span>
               </a>
             </Link>
           </div>
@@ -57,6 +61,12 @@ const Footer = () => {
                 <span>WhatsApp</span>
               </a>
             </Link>
+          </div>
+        </div>
+        <div>
+          <div className={`flex items-center ${FooterStyles.footer__item}`}>
+            <span><img src="/location.svg" alt="" className="w-4 mr-2 inline-block"/></span>
+            <span>Accra Ghana</span>
           </div>
         </div>
       </div>
