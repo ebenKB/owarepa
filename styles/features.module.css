@@ -4,12 +4,17 @@
   min-height: 100vh;
   z-index: 3;
   position: relative;
+
 }
 
-.features_section__content div {
-  /* background: rgb(46, 46, 46);
-  height: 430px; */
-  /* margin-right: 20px; */
+/* .features_section {
+  display: grid;
+} */
+
+.features_section__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  grid-gap: 30px;
 }
 
 /* .features_section__content div:not(:last-child){

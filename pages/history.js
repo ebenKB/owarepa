@@ -99,7 +99,7 @@ const About = () => {
               </div>
               <div className="faint-caption flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full mr-10">
                 <div className="sm:w-full md:w-11/12 lg:w-11/12 xl:w-11/12  text-justify">
-                  <p className="mb-5 sm:text-base md:text-2xl lg:text-2xl xl:text-2xl">
+                  <p className="sm:text-base md:text-2xl lg:text-2xl xl:text-2xl md:w-4/5 lg:w-4/5 xl:w-11/12 text-justify">
                     Oware is a game the unifies people, 
                     both players and spectators alike. The name “oware” is an 
                     Akan word meaning “he marries” or “she marries.” 
@@ -107,7 +107,7 @@ const About = () => {
                     and they loved to keep playing together so much that they got married in 
                     order to get more time to play. 
                   </p>
-                  <p className="sm:text-base md:text-2xl lg:text-2xl xl:text-2xl md:w-4/5 lg:w-4/5 xl:w-4/5 text-justify">
+                  <p className="mt-5 sm:text-base md:text-2xl lg:text-2xl xl:text-2xl md:w-4/5 lg:w-4/5 xl:w-11/12 text-justify">
                     No wonder today when couples play this game 
                     together their friendship improves. There is only one app on Play Store that 
                     can let you enjoy the oware game to the fullest extent possible. 

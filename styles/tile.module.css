@@ -2,7 +2,7 @@
   background: rgb(46, 46, 46);
   /* min-height: 350px; */
   height: 100%;
-  min-width: 440px;
+  /* min-width: 440px; */
   display: block;
   padding: 40px;
   transition: all 0.5s ease-in-out;
