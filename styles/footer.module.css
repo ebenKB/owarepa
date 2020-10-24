@@ -28,8 +28,37 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   .app_footer {
     padding: 50px;
+  }
+
+  .footer__wrapper {
+    width: 80%;
+    column-gap: 50px;
+    padding: 40px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .app_footer {
+    padding: 50px;
+  }
+
+  .footer__wrapper {
+    width: 80%;
+    column-gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .app_footer {
+    padding: 50px;
+  }
+
+  .footer__wrapper {
+    width: 100%;
+    
   }
 }

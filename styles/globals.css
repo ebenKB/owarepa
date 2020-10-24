@@ -125,7 +125,7 @@ input:-webkit-autofill:active  {
   -webkit-text-fill-color: var(--very-off-white) !important;
 } */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   .reverse-item div:last-child {
     margin-bottom: 20px;
   }
@@ -135,7 +135,7 @@ input:-webkit-autofill:active  {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 640px) {
   body {
     cursor: none;
   }

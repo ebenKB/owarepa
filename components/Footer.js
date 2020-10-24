@@ -14,6 +14,16 @@ const Footer = () => {
             </Link>
           </div>
           <div className={FooterStyles.footer__item}>
+            <Link href="/history" passHref>
+                <a>History</a>
+              </Link>
+          </div>
+          <div className={FooterStyles.footer__item}>
+            <Link href="/rules" passHref>
+                <a>Rules</a>
+              </Link>
+          </div>
+          <div className={FooterStyles.footer__item}>
             <Link href="/about" passHref>
                 <a>About</a>
               </Link>
@@ -64,7 +74,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <div className={`flex items-center ${FooterStyles.footer__item}`}>
+          <div className={`flex items-center ${FooterStyles.footer__item} mt-8 sm:mt-0 md:mt-0 lg:mt-0 xl:m-0`}>
             <span><img src="/location.svg" alt="" className="w-4 mr-2 inline-block"/></span>
             <span>Accra Ghana</span>
           </div>

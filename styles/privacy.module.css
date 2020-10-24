@@ -22,7 +22,7 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   .privacy_wrapper_content {
     width: 90%;
     margin: auto;
