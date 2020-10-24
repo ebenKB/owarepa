@@ -85,6 +85,12 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  .contact_form {
+    
+  }
+}
+
 @media only screen and (max-width: 640px) {
   .contact_form {
     width: 90%;
