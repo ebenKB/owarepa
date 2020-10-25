@@ -1,7 +1,8 @@
 .itemListWrapper {
   border-left: 4px dotted var(--red);
   border-bottom-right-radius: 3px;
-  padding: 0 30px;
+  /* padding: 0 30px; */
+  padding-left: 30px;
 }
 
 .itemListWrapper li {

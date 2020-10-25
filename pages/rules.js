@@ -33,11 +33,11 @@ const rules = () => {
         <div className={styles.rules_bg} />
         <div className={styles.rules_overlay} />
           <div className="w-full">
-            <h1 className="text-5xl">The Rules are fairly simple and straight forward</h1>
+            <h1 className="text-3xl md:text-5xl lg:text-5xl xl:text-5xl">The Rules are fairly simple and straight forward</h1>
           </div>
         </section>
           <section className={styles.rulesContent}>
-            <h1 className="big-caption mb-10 pure-caption">
+            <h1 className="text-3xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl mb-10 pure-caption">
               <div data-scroll>4 RULES OF OWARE</div>
             </h1>
             <div className="faint-caption sm:w-full md:w-11/12 lg:w-11/12 xl:w-11/12 sm:text-base md:text-2xl lg:text-2xl xl:text-2xl content_text">
@@ -46,7 +46,7 @@ const rules = () => {
                 In the case of the Nam-nam, your objective is to capture all 48 seeds. 
                 But with Abapa, one wins by capturing at least 25 seeds on the board.
               </p>
-              <div className={`sm:text-justify ${styles.game_rules}`}>
+              <div className={`text-justify md:text-left ${styles.game_rules}`}>
                 <ItemListWrapper>
                   <li>Players play in turns.</li>
                   <li>It is mandatory for each player to make a move.</li>

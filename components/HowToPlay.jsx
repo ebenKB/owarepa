@@ -24,11 +24,11 @@ export const Abapa = () => {
 
   return (
     <section className={styles.abapaContent}>
-      <h1 className="big-caption mb-10 pure-caption">
+      <h1 className="text-3xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl mb-10 pure-caption">
         <div data-scroll>HOW TO PLAY OWARE ABAPA</div>
       </h1>
       <div className="flex flex-wrap flex-wrap-reverse text-justify content_text w-full reverse-item">
-        <div className="faint-caption flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full sm:text-base md:text-2xl lg:text-2xl xl:text-2xl">
+        <div className="faint-caption flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full text-base sm:text-base md:text-2xl lg:text-2xl xl:text-2xl">
           <p className="pb-10">
             One plays by picking all seeds in any one of the houses in the player's 
             territory and distributing them one by one in an anti-clockwise direction. 
@@ -55,11 +55,13 @@ export const Abapa = () => {
 export const Namnam = () => {
   return (
     <section className={styles.namnamContent}>
-      <h1 className="mb-10 big-caption pure-caption">
+      <h1 className="mb-10 text-3xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl pure-caption">
         <div data-scroll>HOW TO PLAY OWARE NANAM</div>
       </h1>
       <div className="flex flex-wrap-reverse text-justify content_text reverse-item">
-        <div className="faint-caption flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full sm:text-base md:text-2xl lg:text-2xl xl:text-2xl">
+        <div 
+          className="faint-caption flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full text-base sm:text-base md:text-2xl lg:text-2xl xl:text-2xl"
+        >
           <p className="pb-10">
             With the Nam-nam rule, seeds in one house are picked and distributed counter-clockwise. 
             When the distribution ends in a non-empty house, 
