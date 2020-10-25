@@ -6,6 +6,7 @@
   width: 100%;
   /* background: rgb(26, 25, 25); */
   background: var(--black);
+  column-gap: 30px;
   /* transform: translateY(90px); */
   z-index: 1;
 }
