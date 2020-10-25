@@ -4,22 +4,15 @@
   min-height: 100vh;
   z-index: 3;
   position: relative;
-
+  width: 100%;
 }
-
-/* .features_section {
-  display: grid;
-} */
 
 .features_section__content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   grid-gap: 30px;
+  width: 100%;
 }
-
-/* .features_section__content div:not(:last-child){
-  margin-right: 20px;
-} */
 
 @media only screen and (max-width: 1440px) {
   .features_section {
@@ -28,6 +21,10 @@
 }
 
 @media only screen and (max-width: 640px) {
+  .features_section__content {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
   .features_section {
     padding: 25px;
   }

@@ -72,24 +72,24 @@ const About = () => {
           </HistoryCarousel>
           <div className={styles.aboutOverlay}></div>
           <section className={styles.aboutContent}>
-            <h1 className="big-caption mb-10 pure-caption">
+            <h1 className="text-3xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl mb-10 pure-caption">
               <div data-scroll>HISTORY OF OWARE</div>
             </h1>
 
             <div className="flex flex-wrap content_text">
               <div className="faint-caption flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full mr-10">
                   <div className="sm:w-full md:w-11/12 lg:11/12 xl:11/12 text-justify">
-                    <p className="faint-caption sm:text-base md:text-2xl lg:text-2xl xl:text-2xl mb-5 sm:w-full md:w-4/5 lg:w-4/5 xl:w-11/12 content_text text-justify">
+                    <p className="faint-caption text-base sm:text-base md:text-2xl lg:text-2xl xl:text-2xl mb-5 sm:w-full md:w-4/5 lg:w-4/5 xl:w-11/12 content_text text-justify">
                       Oware (<em>also known as Wari or Awale</em>) is the most popular of the strategy 
                       games belonging to the Mancala family of board games.
                     </p>
-                    <p className="pb-5 sm:text-base md:text-2xl lg:text-2xl xl:text-2xl sm:w-full md:w-4/5 lg:w-4/5 xl:w-11/12">
+                    <p className="pb-5 text-base sm:text-base md:text-2xl lg:text-2xl xl:text-2xl sm:w-full md:w-4/5 lg:w-4/5 xl:w-11/12">
                       Oware is one of the oldest games played today. 
                       This game is far from a game of chance. Instead, 
                       it is a strategic game that requires prudence and clever moves 
                       from both players.
                     </p>
-                    <p className="mb-5 sm:text-base md:text-2xl lg:text-2xl xl:text-2xl">
+                    <p className="mb-5 text-base sm:text-base md:text-2xl lg:text-2xl xl:text-2xl">
                       Oware is very popular in West Africa, 
                       the Caribbean, Middle East and Asia. Oware belongs to the mancala family of games, 
                       but still remains the most popular variant of this family of board games. 
@@ -99,7 +99,7 @@ const About = () => {
               </div>
               <div className="faint-caption flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full mr-10">
                 <div className="sm:w-full md:w-11/12 lg:w-11/12 xl:w-11/12  text-justify">
-                  <p className="sm:text-base md:text-2xl lg:text-2xl xl:text-2xl md:w-4/5 lg:w-4/5 xl:w-11/12 text-justify">
+                  <p className="text-base sm:text-base md:text-2xl lg:text-2xl xl:text-2xl md:w-4/5 lg:w-4/5 xl:w-11/12 text-justify">
                     Oware is a game the unifies people, 
                     both players and spectators alike. The name “oware” is an 
                     Akan word meaning “he marries” or “she marries.” 
@@ -107,7 +107,7 @@ const About = () => {
                     and they loved to keep playing together so much that they got married in 
                     order to get more time to play. 
                   </p>
-                  <p className="mt-5 sm:text-base md:text-2xl lg:text-2xl xl:text-2xl md:w-4/5 lg:w-4/5 xl:w-11/12 text-justify">
+                  <p className="mt-5 text-base sm:text-base md:text-2xl lg:text-2xl xl:text-2xl md:w-4/5 lg:w-4/5 xl:w-11/12 text-justify">
                     No wonder today when couples play this game 
                     together their friendship improves. There is only one app on Play Store that 
                     can let you enjoy the oware game to the fullest extent possible. 

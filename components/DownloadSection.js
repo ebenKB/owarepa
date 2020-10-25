@@ -5,7 +5,7 @@ import Link from 'next/link';
 const DownloadSection = () => {
   return (
     <section className={`${styles.download_section} text-center`}>
-      <h1 className="text-5xl">
+      <h1 className="text-3xl md:text-5xl lg:text-5xl xl:text-5xl">
         <div data-scroll>Download Game</div>
         </h1>
       <div className="pt-10">

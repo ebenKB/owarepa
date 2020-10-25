@@ -19,19 +19,25 @@ const history = () => {
         <Layout>
         <div className={styles.about_wrapper}>
           <div className={`${styles.about_wrapper_content}`}>
-            <h1 className="text-5xl capitalize pt-10">Who we are</h1>
-            <p className="mb-5">
-              We are a community of oware players. Our goal is to promote the game of oware. 
-              Our vision is to make oware the number one board game in Ghana, 
-              and a very popular game around the world. Our mission is to educate 
-              people on how to play oware and enjoy to the fullest, and to organize 
-              competitions as a means to promote the game.
-            </p>
-            <p className="mb-5">
-              Jevielenabel, founded in 2019, is the developer of the OwarePa app. 
-              Its objective is to help the community of oware players promote the 
-              game of oware through apps, social media, videos, documents, etc.
-            </p>
+            <h1
+              className="mt-5 md:mt-0 text-3xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl capitalize pt-10"
+            >
+              Who we are
+            </h1>
+            <div className="text-base sm:text-2xl md:text-2xl lg:text-2xl xl:text-2xl">
+              <p className="mb-5">
+                We are a community of oware players. Our goal is to promote the game of oware. 
+                Our vision is to make oware the number one board game in Ghana, 
+                and a very popular game around the world. Our mission is to educate 
+                people on how to play oware and enjoy to the fullest, and to organize 
+                competitions as a means to promote the game.
+              </p>
+              <p className="mb-5">
+                Jevielenabel, founded in 2019, is the developer of the OwarePa app. 
+                Its objective is to help the community of oware players promote the 
+                game of oware through apps, social media, videos, documents, etc.
+              </p>
+            </div>
             <p>
               <span>
                 <Link href="https://chat.whatsapp.com/D5RiDmlWcd16CK4RJtt6eH">

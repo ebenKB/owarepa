@@ -1,5 +1,4 @@
 .contactWrapper {
-  /* background:  var(--off-white); */
   background: var(--black);
   position: relative;
   width: 100%;
@@ -12,7 +11,6 @@
   margin-left: auto;
   margin-right: auto;
   min-height: 100vh;
-  /* color: var(--faint); */
   color: var(--off-white);
 }
 
@@ -20,12 +18,12 @@
   position: relative;
   background-color: var(--dark);
   width: 100%;
+  padding: 10px;
 }
 
 .contact_form {
   border: 2px solid rgb(206, 206, 206); 
   border-radius: 4px;
-  /* width: 60%; */
   width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -86,9 +84,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .contact_form {
-    
-  }
+  .contact_form {}
 }
 
 @media only screen and (max-width: 640px) {
@@ -97,6 +93,10 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .contact_wrapper {
     padding: 20px;
   }
 }

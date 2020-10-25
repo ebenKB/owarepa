@@ -33,7 +33,7 @@ const Privacy = () => {
             <div className={styles.privacy_items}>
               <h1 className="text-3xl capitalize">User Data Protection</h1>
               <div>
-                <p className="text-justify">
+                <p className="text-base sm:text-base md:text-2xl lg:text-2xl xl:text-2xl text-justify">
                   This game is built with Unity software, thus Unity collects 
                   information about your device such as unique device identifiers, 
                   IP address, country of install, operating system and version, etc.
@@ -47,7 +47,7 @@ const Privacy = () => {
             <div className={styles.privacy_items}>
               <h1 className="text-3xl capitalize">Unity Analytics and Adds</h1>
               <div>
-                <p className="text-justify">
+                <p className="text-base sm:text-base md:text-2xl lg:text-2xl xl:text-2xl text-justify">
                   In addition, this application is integrated with the following Unity services:
                   Unity Analytics and Unity Ads. These services also collect additional information.
                   These information are used to predict which ads will be of most interest to 
@@ -60,7 +60,7 @@ const Privacy = () => {
                 </p>
               </div>
               <div>
-                <p className="text-justify">
+                <p className="text-base sm:text-base md:text-2xl lg:text-2xl xl:text-2xl text-justify">
                   In addition, this app integrates with Photon Cloud services for multiplayer games.
                   Some of the information that may be collected include your device’s operating software, 
                   your internet service provider, your device’s regional and language settings, 
@@ -70,7 +70,7 @@ const Privacy = () => {
                 </p>
               </div>
               <div>
-                <p className="text-justify">
+                <p className="text-base sm:text-base md:text-2xl lg:text-2xl xl:text-2xl text-justify">
                   For full information on what information Unity collects and what they are used for, 
                   please visit unity3d.com/legal/privacy-policy.
                 </p>
@@ -82,7 +82,7 @@ const Privacy = () => {
                 <span>for that of Photon Cloud service.</span>
               </div>
               <div>
-                  <p className="text-justify">
+                  <p className="text-base sm:text-base md:text-2xl lg:text-2xl xl:text-2xl text-justify">
                     This privacy policy was last updated on <span className="font-bold">July 12, 2020</span>, 
                     and has taken immediate effect. Our privacy policy may change from time to time. 
                     However, when any significant change(s) are made, you will be informed within the app, 

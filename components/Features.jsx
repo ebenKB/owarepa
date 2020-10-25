@@ -24,7 +24,7 @@ const Features = () => {
   }, [])
   return (
     <section className={styles.features_section}>
-      <h1 className="text-5xl mb-10" >
+      <h1 className="text-3xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl mb-10" >
         <div data-scroll>FEATURES OF OWAREPA GAME</div>
       </h1>
       <p className="text-2xl mb-10">OwarePa is an Android game with exciting features.</p>
