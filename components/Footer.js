@@ -6,7 +6,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className={`${FooterStyles.app_footer} ${FooterStyles.content_texts}`}>
-      <div className={`flex flex-wrap ${FooterStyles.footer__wrapper}`}>
+      <div className={`flex gap-x-10 flex-wrap ${FooterStyles.footer__wrapper}`}>
         <div className={`flex-none sm:flex-none md:flex-1 ${FooterStyles.nav__links}`}>
           <div className={FooterStyles.footer__item}>
             <Link href="/" passHref>
