@@ -15,14 +15,15 @@ const Cursor = () => {
   }
 
   const positionElement = (event) => {
+    console.log(event.pageY)
     const mouse = {
       x: mouseX(event),
       y:  mouseY(event),
     }
 
     if (follower.current) {
-      follower.current.style.top = (mouse.y) + 'px'
-      follower.current.style.left = (mouse.x) + 'px'
+      follower.current.style.top = (mouse.y - 10) + 'px'
+      follower.current.style.left = (mouse.x - 10) + 'px'
     }
   }
 
@@ -38,10 +39,7 @@ const Cursor = () => {
   })
 
   return (
-    <div ref={follower} id="follower" className={styles.follower}>
-      <div ref={circle_1} id="cirlce_1" className={styles.circle_1}></div>
-      <div ref={circle_2} id="circle_2" className={styles.circle_2}></div>
-    </div>
+    <div ref={follower} id="follower" className={styles.follower}></div>
   )
 }
 
