@@ -16,7 +16,7 @@ const BenefitsSection = () => {
             <p className="faint-caption content_text text-justify">A bond of friendship is formed between players and spectators alike.</p>
           </li>
           <li className="pb-8">
-            <h3 className="text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl">Acadamically, Oware improves one's counting ability</h3>
+            <h3 className="text-2xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl">Academically, Oware improves one's counting ability</h3>
             <p className="faint-caption content_text text-justify">At various levels of the game, users ponder over best possible moves that can make them win.</p>
           </li>
           <li className="pb-8">
@@ -38,7 +38,7 @@ const BenefitsSection = () => {
             </p>
             <p className="faint-caption content_text mt-5 text-justify">
               In Abapa, you sometimes have to sacrifice some seeds with the objective of either capturing 
-              more seeds afterward, or getting the chance to rearrange the seeds on the board to your favor.
+              more seeds afterward, or getting the chance to rearrange the seeds on the board to your favour.
             </p>
           </li>
         </ItemListWrapper>

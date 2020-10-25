@@ -82,12 +82,12 @@ const Privacy = () => {
                 <span>for that of Photon Cloud service.</span>
               </div>
               <div>
-                  <p className="text-base sm:text-base md:text-2xl lg:text-2xl xl:text-2xl text-justify">
-                    This privacy policy was last updated on <span className="font-bold">July 12, 2020</span>, 
-                    and has taken immediate effect. Our privacy policy may change from time to time. 
-                    However, when any significant change(s) are made, you will be informed within the app, 
-                    and also on the developer's website.
-                  </p>
+                <p className="text-base sm:text-base md:text-2xl lg:text-2xl xl:text-2xl text-justify">
+                  This privacy policy was last updated on <span className="font-bold">July 12, 2020</span>, 
+                  and has taken immediate effect. Our privacy policy may change from time to time. 
+                  However, when any significant change(s) are made, you will be informed within the app, 
+                  and also on the developer's website.
+                </p>
               </div>
             </div>
           </div>
