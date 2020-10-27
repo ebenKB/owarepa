@@ -1,13 +1,18 @@
 .about_wrapper {
-  background: var(--dark);
+  position: relative;
   min-height: 95vh;
   width: 100%;
   color: var(--faint);
   font-size: 1.2rem;
+}
+
+.about_wrapper_main{
+  background: var(--dark);
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 .about_wrapper_content {
+  position: relative;
   width: 45%;
   min-height: 95vh;
   margin-left: auto;
