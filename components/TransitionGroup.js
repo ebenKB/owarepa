@@ -14,7 +14,7 @@ const Transition = () => {
   })
 
   useEffect(() => {
-    setItems(() => [])
+    // setItems(() => [])
     let t = 200;
     let i =0;
     let interval=null;
