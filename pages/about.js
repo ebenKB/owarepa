@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useContext } from 'react';
 import Layout from '../components/Layout';
 import AppHeadMeta from '../components/AppHeadMeta';
 import Navigation from '../components/Navigation';
@@ -8,9 +8,18 @@ import styles from '../styles/about.module.css';
 import Link from 'next/link';
 import useMedia from '../components/UseMedia';
 import Cursor from '../components/Cursor';
+import { AppContext } from '../context/app.context';
 
 const history = () => {
   const media = useMedia();
+  const { data, setAppState } = useContext(AppContext)
+  useEffect(() => {
+    setAppState(({
+      ...data,
+      position: 'default',
+      navType: 'opaque'
+    }))
+  }, []);
   return (
     <>
       {media.x >= 600 && <Cursor />}
