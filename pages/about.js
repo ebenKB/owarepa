@@ -30,7 +30,7 @@ const history = () => {
           <div className={styles.about_wrapper_main}>
             <div className={`${styles.about_wrapper_content}`}>
               <h1
-                className="mt-5 md:mt-0 text-3xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl capitalize pt-10"
+                className="mt-5 md:mt-10 text-3xl sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl capitalize pt-10"
               >
                 Who we are
               </h1>
