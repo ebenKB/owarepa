@@ -20,11 +20,13 @@
 .nav_menu {
   background: var(--dark);
   height: 100vh;
+  transition: all 3s linear;
 }
 
 .nav_caption {
   background: var(--wood);
   color: var(--dark);
+  transition: all 3s linear;
 }
 
 .nav_menu__heading {
