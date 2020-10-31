@@ -62,12 +62,12 @@ const Features = () => {
         <FeatureItem
           caption="Different Screen Orientations"
           description="Play on small or large devices."
-          imageUrl="/speedometer.svg"
+          imageUrl="/screen-rotation.svg"
         />
         <FeatureItem
           caption="Interactive Tutorial"
           description="You get helpful tips on how to play the game."
-          imageUrl="/speedometer.svg"
+          imageUrl="/question.svg"
         />
       </div>
     </section>
