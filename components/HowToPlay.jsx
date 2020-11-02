@@ -45,7 +45,7 @@ export const Abapa = () => {
           <h3 className="">A game is won when a player earns 25 or more seeds.</h3>
         </div>
         <div className="sm:mb-5 flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 lg:ml-20 xl:ml-20 w-full">
-          <img src="/abapa.png" alt="" className="rounded-image"/>
+          <img src="/abapa.jpg" alt="" className="rounded-image"/>
         </div>
       </div>
     </section>
@@ -87,7 +87,7 @@ export const Namnam = () => {
           <h3>The game ends when after a round of play, one player earns all 48 seeds.</h3>
         </div>
         <div className="flex-none sm:flex-1 md:flex-1 lg:flex-1 xl:flex-1 w-full md:ml-20 lg:ml-20 xl:ml-20 w-full">
-          <img src="/namnam.png" alt="" className="rounded-image"/>
+          <img src="/namnam.jpg" alt="" className="rounded-image"/>
         </div>
       </div>
     </section>
