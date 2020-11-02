@@ -56,6 +56,7 @@ const About = () => {
             <picture className={styles.aboutWrapper}>
               <source srcSet="/oware1-small.png" media="(max-width: 600px)"/>
               <img src="/oware-history.png" alt="" className={styles.aboutWrapper}/>
+              
               <div className={styles.aboutOverlay}>
               </div>
             </picture>
