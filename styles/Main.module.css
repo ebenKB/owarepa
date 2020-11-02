@@ -48,11 +48,10 @@
 }
 
 .hero {
-  background: url('/oware.jpg') no-repeat;
+  background: url('/oware-web.jpg') no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
-  /* position: fixed; */
   position: relative;
   z-index: 0;
 }
@@ -87,7 +86,6 @@
 }
 
 .hero_content_overlay {
-  /* background: linear-gradient(rgba(252, 252, 252, 0.1), rgba(255, 255, 255, 0.1)); */
   width: 100%;
   height: 150px;
   z-index: -1;
@@ -97,11 +95,9 @@
 
 .hero_text {
   background: transparent;
-  /* margin-top: 140px; */
   padding: 150px 0;
   top: 12vh;
   left: 0;
-  /* position: fixed; */
   position: absolute;
   text-align: center;
   width: 100%;
