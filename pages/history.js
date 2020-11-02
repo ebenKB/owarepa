@@ -55,7 +55,7 @@ const About = () => {
           <HistoryCarousel>
             <picture className={styles.aboutWrapper}>
               <source srcSet="/oware1-small.png" media="(max-width: 600px)"/>
-              <img src="/oware-history.png" alt="" className={styles.aboutWrapper}/>
+              <img src="/oware-history.jpg" alt="" className={styles.aboutWrapper}/>
               
               <div className={styles.aboutOverlay}>
               </div>
@@ -67,7 +67,7 @@ const About = () => {
             </picture>
             <picture className={styles.aboutWrapper}>
               <source srcSet="/owarewood-small.png" media="(max-width: 600px)"/>
-              <img src="/oware-views.png" alt="" className={styles.aboutWrapper}/>
+              <img src="/oware-views.jpg" alt="" className={styles.aboutWrapper}/>
               <div className={styles.aboutOverlay}></div>
             </picture>
           </HistoryCarousel>
