@@ -75,11 +75,11 @@ const Privacy = () => {
                   please visit unity3d.com/legal/privacy-policy.
                 </p>
                 <Link href="https://dashboard.photonengine.com/en/Account/PrivacyAndCookiePolicy" passHref>
-                  <a target="_blank" className="text-blue">
+                  <a target="_blank" className="text-base sm:text-base md:text-2xl lg:text-2xl xl:text-2xl text-blue">
                     &nbsp;Click here &nbsp;
                   </a>
                 </Link>
-                <span>for that of Photon Cloud service.</span>
+                <span className="text-base sm:text-base md:text-2xl lg:text-2xl xl:text-2xl">for that of Photon Cloud service.</span>
               </div>
               <div>
                 <p className="text-base sm:text-base md:text-2xl lg:text-2xl xl:text-2xl text-justify">
