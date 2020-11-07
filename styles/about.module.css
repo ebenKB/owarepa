@@ -3,7 +3,6 @@
   min-height: 95vh;
   width: 100%;
   color: var(--faint);
-  font-size: 1.2rem;
 }
 
 .about_wrapper_main{
@@ -20,6 +19,7 @@
   padding: 60px;
   text-align: justify;
   color: var(--off-white);
+  font-size: 1.2rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -27,7 +27,6 @@
     width: 80%;
   }
 }
-
 
 @media only screen and (max-width: 640px) {
   .about_wrapper_content {

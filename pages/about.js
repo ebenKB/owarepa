@@ -58,7 +58,7 @@ const history = () => {
                     &nbsp;of oware players today, and help promote the game of oware.
                   </span>
                 </p>
-                <p className="text-3xl mt-10 capitalize">
+                <p className="text-2xl md:text-3xl mt-10 capitalize">
                   Enjoy Life. Play Oware. Download OwarePa.
                 </p>
               </div>
