@@ -14,16 +14,18 @@ const Transition = () => {
   })
 
   useEffect(() => {
-    let interval=null;
+    let interval = null;
     const timer = setTimeout(() => {
       let t = 200;
-      let i =0;
-      if (i < text.length) {
-         interval = setInterval(() => {
-          setItems((items) => [...items, {key: Math.random(), text: text[i]}]);
-          i++;
-        }, t)
-      } else { clearInterval(interval); }
+      let i = 0;
+      interval = setInterval(() => {
+      setItems((items) => [...items, {key: Math.random(), text: text[i]}]);
+      i++;
+      if (i >= text.length) {
+        clearInterval(interval); 
+        clearTimeout(timer);
+      }
+    }, t)
     }, 500)
 
     return () => {
