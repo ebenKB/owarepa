@@ -131,6 +131,7 @@
 
   .hero {
     width: 100%;
+    background-position: 50% 50%;
   }
 
   .hero_content {
