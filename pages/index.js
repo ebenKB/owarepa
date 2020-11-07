@@ -93,7 +93,7 @@ export default function Home() {
                       the most popular of the strategy games belonging to the Mancala family of board games.
                     </p>
                     <div className="pt-20 content_text">
-                      <Link href="/" passRefs>
+                      <Link href="https://play.google.com/store/apps/details?id=com.jeviasolutions.OwarePa" passRefs>
                         <a className={`${styles.download_btn} inline-flex items-center`} target="_blank">
                           <span>
                             <img src="./frd-arrow.svg" alt="" className={`${styles.download_img} mr-4`}/>
