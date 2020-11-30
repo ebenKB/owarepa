@@ -65,7 +65,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className={FooterStyles.footer__item}>
-            <Link href="https://chat.whatsapp.com/D5RiDmlWcd16CK4RJtt6eH" passHref>
+            <Link href="https://wa.me/+233266263760" passHref>
               <a target="_blank">
                 <span><img src="/whatsapp_2.svg" alt="" className="w-4 mr-2 inline-block"/></span>
                 <span>WhatsApp</span>

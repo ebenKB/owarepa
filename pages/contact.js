@@ -43,6 +43,12 @@ const Contact = () => {
                         <span className="text-2xl">Join us on WhatsApp</span>
                       </a>
                     </Link>
+                    {/* <Link href="https://chat.whatsapp.com/D5RiDmlWcd16CK4RJtt6eH" passHref>
+                      <a className="flex items-center text-green-400" target="_blank">
+                        <span><img src="/whatsapp.svg" alt="" className="w-6 mr-2"/></span>
+                        <span className="text-2xl">Join us on Facebook</span>
+                      </a>
+                    </Link> */}
                   </div>
                 </div>
               </div>
