@@ -72,6 +72,22 @@ const Footer = () => {
               </a>
             </Link>
           </div>
+          <div className={FooterStyles.footer__item}>
+            <Link href="https://chat.whatsapp.com/D5RiDmlWcd16CK4RJtt6eH" passHref>
+              <a target="_blank">
+                <span><img src="/group.svg" alt="" className="w-4 mr-2 inline-block"/></span>
+                <span>WhatsApp Group</span>
+              </a>
+            </Link>
+          </div>
+          <div className={FooterStyles.footer__item}>
+            <Link href="https://web.facebook.com/groups/716684239191984" passHref>
+              <a target="_blank">
+                <span><img src="/group.svg" alt="" className="w-4 mr-2 inline-block"/></span>
+                <span>Facebook Group</span>
+              </a>
+            </Link>
+          </div>
         </div>
         <div>
           <div className={`flex items-center ${FooterStyles.footer__item} mt-8 sm:mt-0 md:mt-0 lg:mt-0 xl:m-0`}>
