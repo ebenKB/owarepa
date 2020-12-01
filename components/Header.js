@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import HeaderStyles from '../styles/Header.module.css';
 import { AppContext } from '../context/app.context';
-import Link from 'next/Link'
+import Link from 'next/link'
 
 const Header = ({ handleAction }) => {
   const [yPos, setYPos] = useState(0);
