@@ -41,8 +41,8 @@ const Header = ({ handleAction }) => {
       <div className="flex-1 text-2xl">
         <Link href="/">
           <span className="inline-flex items-center m-auto">
-            <img src="/logo.png" alt="" className={`${HeaderStyles.app_logo } w-12`} />
-            <span className="ml-2 text-3xl">owarepa</span>
+            <img src="/oware-logo.png" alt="" className={`${HeaderStyles.app_logo } w-40`} />
+            {/* <span className="ml-2 text-3xl">owarepa</span> */}
           </span>
         </Link>
       </div>
