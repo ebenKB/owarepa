@@ -83,6 +83,34 @@
   width: 100%;
 }
 
+
+.links_group a {
+  position: relative;
+  margin-right: 20px;
+  color: var(--wood);
+  padding: 0 5px;
+}
+
+.links_group a::after {
+  content: '';
+  width: 0%;
+  height: 1px;
+  background: var(--white);
+  position: absolute;
+  bottom: -4px;
+  transition: width .5s linear;
+}
+
+
+.links_group a:hover::after {
+  width: calc(100% - 10px);
+  transition: width .5s linear;
+}
+
+.links_group a:hover {
+  color: var(--white);
+}
+
 @media only screen and (max-width: 768px) {
   .contact_form {}
 }

@@ -36,31 +36,36 @@ const Contact = () => {
               <div className={`${Contactstyles.contact_wrapper} ${Contactstyles.contact_intro_wrapper} flex-none md:flex-1 lg:flex-1 xl:flex-1 animate__animated animate__slideInDown`}>
                 <div className={`${Contactstyles.contact_wrapper} ${Contactstyles.contact_intro} text-center m-auto`}>
                   <h1 className="capitalize text-3xl md:text-5xl">We are happy to hear from you.</h1>
-                  <div className="mt-10 text-center inline-flex">
+                  <div className={`${Contactstyles.links_group} mt-10 text-center flex-none md:inline-flex`}>
                     <Link href="https://chat.whatsapp.com/D5RiDmlWcd16CK4RJtt6eH" passHref>
-                      <a className="flex items-center text-green-400" target="_blank">
-                        <span><img src="/whatsapp.svg" alt="" className="w-6 mr-2"/></span>
-                        <span className="text-2xl">Join us on WhatsApp</span>
+                      <a className="block flex-none md:flex items-center text-gray-400" target="_blank">
+                        {/* <span><img src="/whatsapp.svg" alt="" className="w-6 mr-2"/></span> */}
+                        <span className="">Join WhatsApp Group</span>
                       </a>
                     </Link>
-                    {/* <Link href="https://chat.whatsapp.com/D5RiDmlWcd16CK4RJtt6eH" passHref>
-                      <a className="flex items-center text-green-400" target="_blank">
-                        <span><img src="/whatsapp.svg" alt="" className="w-6 mr-2"/></span>
-                        <span className="text-2xl">Join us on Facebook</span>
+                    <Link href="https://wa.me/+233266263760" passHref>
+                      <a className="block flex-none md:flex items-center text-gray-400" target="_blank">
+                        {/* <span><img src="/whatsapp.svg" alt="" className="w-6 mr-2"/></span> */}
+                        <span className="">Send WhatsApp Message</span>
                       </a>
-                    </Link> */}
+                    </Link>
+                    <Link href="https://web.facebook.com/groups/716684239191984" passHref>
+                      <a className="block flex-none md:flex items-center text-gray-400" target="_blank">
+                        {/* <span><img src="/whatsapp.svg" alt="" className="w-6 mr-2"/></span> */}
+                        <span className="">Join Facebook Group</span>
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className={`${Contactstyles.contact_form_content} flex-none md:flex-1 lg:flex-1 xl:flex-1`}>
-                {/* <ContactForm /> */}
                 <DarkContactForm />
               </div>
             </div>
           </div>
           <DownloadSection />
           <Footer />
-        </Layout>
+        </Layout>s
       </div>
     </section>
   )
