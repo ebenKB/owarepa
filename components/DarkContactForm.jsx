@@ -28,10 +28,9 @@ const DarkContactForm = () => {
   // }, [hasSentMessage])
 
   const sendEmail = async (data) => {
-    console.log('We want to send an email', data)
     setLoading(true);
     const template = {
-      to_email: 'eboafo.adjei@gmail.com',
+      to_email: 'owarepa@gmail.com',
       user_email: data.email,
       from_email: 'eakbo23@gmail.com',
       from_name: data.name,
