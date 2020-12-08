@@ -63,3 +63,10 @@
     column-gap: 50px;
   }
 }
+
+
+@media only screen and (max-width: 640px) {
+    .app_footer {
+    padding: 30px;
+  }
+}

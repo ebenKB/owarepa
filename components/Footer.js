@@ -16,27 +16,27 @@ const Footer = () => {
           <div className={FooterStyles.footer__item}>
             <Link href="/history" passHref>
                 <a>History</a>
-              </Link>
+            </Link>
           </div>
           <div className={FooterStyles.footer__item}>
             <Link href="/rules" passHref>
                 <a>Rules</a>
-              </Link>
+            </Link>
           </div>
           <div className={FooterStyles.footer__item}>
             <Link href="/about" passHref>
                 <a>About</a>
-              </Link>
+            </Link>
           </div>
           <div className={FooterStyles.footer__item}>
             <Link href="/contact" passHref>
                 <a>Contact</a>
-              </Link>
+            </Link>
           </div>
           <div className={FooterStyles.footer__item}>
             <Link href="/privacy" passHref>
                 <a>Privacy</a>
-              </Link>
+            </Link>
           </div>
         </div>
         <div className={`${FooterStyles.nav__links} flex-none sm:flex-none md:flex-1`}>
@@ -96,7 +96,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
       <p className="text-center mt-10 mb-5">
         &copy;
         {new Date().getFullYear()}
